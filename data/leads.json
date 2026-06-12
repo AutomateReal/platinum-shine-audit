@@ -32,9 +32,12 @@
         "dm_sent": null,
         "dm_followup1_sent": null,
         "dm_followup2_sent": null,
-        "replied": null
+        "replied": null,
+        "audit_sent": null,
+        "sales_call": null
       },
-      "notes": []
+      "notes": [],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -49,11 +52,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.878343+00:00",
-        "disqualified": "2026-06-12T01:06:31.878343+00:00"
+        "disqualified": "2026-06-12T01:06:31.878343+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.878343+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -68,11 +74,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.878343+00:00",
-        "disqualified": "2026-06-12T01:06:31.878343+00:00"
+        "disqualified": "2026-06-12T01:06:31.878343+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.878343+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -87,11 +96,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.878343+00:00",
-        "disqualified": "2026-06-12T01:06:31.878343+00:00"
+        "disqualified": "2026-06-12T01:06:31.878343+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.878343+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -106,11 +118,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.880854+00:00",
-        "disqualified": "2026-06-12T01:06:31.880854+00:00"
+        "disqualified": "2026-06-12T01:06:31.880854+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.880854+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -125,11 +140,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.880854+00:00",
-        "disqualified": "2026-06-12T01:06:31.880854+00:00"
+        "disqualified": "2026-06-12T01:06:31.880854+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.880854+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -144,11 +162,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.880854+00:00",
-        "disqualified": "2026-06-12T01:06:31.880854+00:00"
+        "disqualified": "2026-06-12T01:06:31.880854+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.880854+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -163,11 +184,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.880854+00:00",
-        "disqualified": "2026-06-12T01:06:31.880854+00:00"
+        "disqualified": "2026-06-12T01:06:31.880854+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.880854+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -182,11 +206,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.880854+00:00",
-        "disqualified": "2026-06-12T01:06:31.880854+00:00"
+        "disqualified": "2026-06-12T01:06:31.880854+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.880854+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -201,11 +228,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.880854+00:00",
-        "disqualified": "2026-06-12T01:06:31.880854+00:00"
+        "disqualified": "2026-06-12T01:06:31.880854+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.880854+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -220,11 +250,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.880854+00:00",
-        "disqualified": "2026-06-12T01:06:31.880854+00:00"
+        "disqualified": "2026-06-12T01:06:31.880854+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.880854+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -239,11 +272,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.883387+00:00",
-        "disqualified": "2026-06-12T01:06:31.883387+00:00"
+        "disqualified": "2026-06-12T01:06:31.883387+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.883387+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -258,11 +294,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.883387+00:00",
-        "disqualified": "2026-06-12T01:06:31.883387+00:00"
+        "disqualified": "2026-06-12T01:06:31.883387+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.883387+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -277,11 +316,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.883387+00:00",
-        "disqualified": "2026-06-12T01:06:31.883387+00:00"
+        "disqualified": "2026-06-12T01:06:31.883387+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.883387+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -296,11 +338,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.883387+00:00",
-        "disqualified": "2026-06-12T01:06:31.883387+00:00"
+        "disqualified": "2026-06-12T01:06:31.883387+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.883387+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -315,11 +360,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.883387+00:00",
-        "disqualified": "2026-06-12T01:06:31.883387+00:00"
+        "disqualified": "2026-06-12T01:06:31.883387+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.883387+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -334,11 +382,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.883387+00:00",
-        "disqualified": "2026-06-12T01:06:31.883387+00:00"
+        "disqualified": "2026-06-12T01:06:31.883387+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.883387+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -353,11 +404,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.883387+00:00",
-        "disqualified": "2026-06-12T01:06:31.883387+00:00"
+        "disqualified": "2026-06-12T01:06:31.883387+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.883387+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -372,11 +426,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.883387+00:00",
-        "disqualified": "2026-06-12T01:06:31.883387+00:00"
+        "disqualified": "2026-06-12T01:06:31.883387+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.883387+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -391,11 +448,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.883387+00:00",
-        "disqualified": "2026-06-12T01:06:31.883387+00:00"
+        "disqualified": "2026-06-12T01:06:31.883387+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.883387+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -410,11 +470,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.883387+00:00",
-        "disqualified": "2026-06-12T01:06:31.883387+00:00"
+        "disqualified": "2026-06-12T01:06:31.883387+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.883387+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -429,11 +492,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.883387+00:00",
-        "disqualified": "2026-06-12T01:06:31.883387+00:00"
+        "disqualified": "2026-06-12T01:06:31.883387+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.883387+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -448,11 +514,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.883387+00:00",
-        "disqualified": "2026-06-12T01:06:31.883387+00:00"
+        "disqualified": "2026-06-12T01:06:31.883387+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.883387+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -467,11 +536,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.883387+00:00",
-        "disqualified": "2026-06-12T01:06:31.883387+00:00"
+        "disqualified": "2026-06-12T01:06:31.883387+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.883387+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -486,11 +558,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.883387+00:00",
-        "disqualified": "2026-06-12T01:06:31.883387+00:00"
+        "disqualified": "2026-06-12T01:06:31.883387+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.883387+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -505,11 +580,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.883387+00:00",
-        "disqualified": "2026-06-12T01:06:31.883387+00:00"
+        "disqualified": "2026-06-12T01:06:31.883387+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.883387+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -524,11 +602,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.883387+00:00",
-        "disqualified": "2026-06-12T01:06:31.883387+00:00"
+        "disqualified": "2026-06-12T01:06:31.883387+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.883387+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -543,11 +624,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.888396+00:00",
-        "disqualified": "2026-06-12T01:06:31.888396+00:00"
+        "disqualified": "2026-06-12T01:06:31.888396+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.888396+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -562,11 +646,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.888396+00:00",
-        "disqualified": "2026-06-12T01:06:31.888396+00:00"
+        "disqualified": "2026-06-12T01:06:31.888396+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.888396+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -581,11 +668,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.888396+00:00",
-        "disqualified": "2026-06-12T01:06:31.888396+00:00"
+        "disqualified": "2026-06-12T01:06:31.888396+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.888396+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -600,11 +690,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.888396+00:00",
-        "disqualified": "2026-06-12T01:06:31.888396+00:00"
+        "disqualified": "2026-06-12T01:06:31.888396+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.888396+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -619,11 +712,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.888396+00:00",
-        "disqualified": "2026-06-12T01:06:31.888396+00:00"
+        "disqualified": "2026-06-12T01:06:31.888396+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.888396+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -638,11 +734,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.888396+00:00",
-        "disqualified": "2026-06-12T01:06:31.888396+00:00"
+        "disqualified": "2026-06-12T01:06:31.888396+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.888396+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -657,11 +756,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.888396+00:00",
-        "disqualified": "2026-06-12T01:06:31.888396+00:00"
+        "disqualified": "2026-06-12T01:06:31.888396+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.888396+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -676,11 +778,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.888396+00:00",
-        "disqualified": "2026-06-12T01:06:31.888396+00:00"
+        "disqualified": "2026-06-12T01:06:31.888396+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.888396+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -695,11 +800,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.888396+00:00",
-        "disqualified": "2026-06-12T01:06:31.888396+00:00"
+        "disqualified": "2026-06-12T01:06:31.888396+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.888396+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -714,11 +822,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.888396+00:00",
-        "disqualified": "2026-06-12T01:06:31.888396+00:00"
+        "disqualified": "2026-06-12T01:06:31.888396+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.888396+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -733,11 +844,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.888396+00:00",
-        "disqualified": "2026-06-12T01:06:31.888396+00:00"
+        "disqualified": "2026-06-12T01:06:31.888396+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.888396+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -752,11 +866,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.888396+00:00",
-        "disqualified": "2026-06-12T01:06:31.888396+00:00"
+        "disqualified": "2026-06-12T01:06:31.888396+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.888396+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -771,11 +888,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.888396+00:00",
-        "disqualified": "2026-06-12T01:06:31.888396+00:00"
+        "disqualified": "2026-06-12T01:06:31.888396+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.888396+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -790,11 +910,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.888396+00:00",
-        "disqualified": "2026-06-12T01:06:31.888396+00:00"
+        "disqualified": "2026-06-12T01:06:31.888396+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.888396+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -809,11 +932,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.888396+00:00",
-        "disqualified": "2026-06-12T01:06:31.888396+00:00"
+        "disqualified": "2026-06-12T01:06:31.888396+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.888396+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -828,11 +954,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.893426+00:00",
-        "disqualified": "2026-06-12T01:06:31.893426+00:00"
+        "disqualified": "2026-06-12T01:06:31.893426+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.893426+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -847,11 +976,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.893426+00:00",
-        "disqualified": "2026-06-12T01:06:31.893426+00:00"
+        "disqualified": "2026-06-12T01:06:31.893426+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.893426+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -866,11 +998,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.893426+00:00",
-        "disqualified": "2026-06-12T01:06:31.893426+00:00"
+        "disqualified": "2026-06-12T01:06:31.893426+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.893426+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -885,11 +1020,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.893426+00:00",
-        "disqualified": "2026-06-12T01:06:31.893426+00:00"
+        "disqualified": "2026-06-12T01:06:31.893426+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.893426+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -904,11 +1042,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.893426+00:00",
-        "disqualified": "2026-06-12T01:06:31.893426+00:00"
+        "disqualified": "2026-06-12T01:06:31.893426+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.893426+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -923,11 +1064,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.893426+00:00",
-        "disqualified": "2026-06-12T01:06:31.893426+00:00"
+        "disqualified": "2026-06-12T01:06:31.893426+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.893426+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -942,11 +1086,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.893426+00:00",
-        "disqualified": "2026-06-12T01:06:31.893426+00:00"
+        "disqualified": "2026-06-12T01:06:31.893426+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.893426+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -961,11 +1108,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.893426+00:00",
-        "disqualified": "2026-06-12T01:06:31.893426+00:00"
+        "disqualified": "2026-06-12T01:06:31.893426+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.893426+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -980,11 +1130,14 @@
       "dm_text": null,
       "timestamps": {
         "found": "2026-06-12T01:06:31.893426+00:00",
-        "disqualified": "2026-06-12T01:06:31.893426+00:00"
+        "disqualified": "2026-06-12T01:06:31.893426+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T01:06:31.893426+00:00: withdrawn — pre-pipeline contact"
-      ]
+      ],
+      "audit_url": null
     },
     {
       "post_url": "https://www.linkedin.com/posts/dashonenglish_propertymanagement-hoa-multifamilyhousing-share-7471005346778595328-TT7J/",
@@ -1017,12 +1170,16 @@
         "dm_followup1_sent": null,
         "dm_followup2_sent": null,
         "replied": null,
-        "connection_checked": "2026-06-12T02:18:25.279661+00:00"
+        "connection_checked": "2026-06-12T02:18:25.279661+00:00",
+        "audit_sent": "2026-06-12T08:14:00+00:00",
+        "sales_call": null
       },
       "notes": [
-        "2026-06-12T02:31:38.224624+00:00: connection_sent reverted — request did not go through"
+        "2026-06-12T02:31:38.224624+00:00: connection_sent reverted — request did not go through",
+        "2026-06-12T17:17:46.398905+00:00: audit_sent marked — https://audits-delta.vercel.app/kingdom-pressure-washing-houston-tx.html"
       ],
-      "author_headline": "Commercial Pressure Washing | Apartment Communities | HOAs | Builders | Houston, TX"
+      "author_headline": "Commercial Pressure Washing | Apartment Communities | HOAs | Builders | Houston, TX",
+      "audit_url": "https://audits-delta.vercel.app/kingdom-pressure-washing-houston-tx.html"
     },
     {
       "post_url": "https://www.linkedin.com/posts/trevor-downes-a237b8167_the-difference-between-earning-800-and-share-7471002486775078912-4U83/",
@@ -1054,10 +1211,13 @@
         "dm_sent": null,
         "dm_followup1_sent": null,
         "dm_followup2_sent": null,
-        "replied": null
+        "replied": null,
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [],
-      "author_headline": "Skip to search"
+      "author_headline": "Skip to search",
+      "audit_url": null
     },
     {
       "post_url": "",
@@ -1089,9 +1249,12 @@
         "dm_sent": null,
         "dm_followup1_sent": null,
         "dm_followup2_sent": null,
-        "replied": null
+        "replied": null,
+        "audit_sent": null,
+        "sales_call": null
       },
-      "notes": []
+      "notes": [],
+      "audit_url": null
     },
     {
       "post_url": "https://www.linkedin.com/posts/mauricio-munoz-5076161a9_roofcleaning-residentialcleaning-propertymaintenance-ugcPost-7470991166977683456-7NYS/",
@@ -1124,14 +1287,17 @@
         "dm_followup1_sent": null,
         "dm_followup2_sent": null,
         "replied": null,
-        "connection_checked": "2026-06-12T02:18:30.600205+00:00"
+        "connection_checked": "2026-06-12T02:18:30.600205+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T02:31:38.224662+00:00: connection_sent reverted — request did not go through",
         "2026-06-12T02:53:26.842576+00:00: reverted from connection_sent — pending was stale (old withdrawn request), actual send never happened",
         "2026-06-12T02:55:38.896955+00:00: confirmed pending — request sent last week"
       ],
-      "author_headline": "Skip to search"
+      "author_headline": "Skip to search",
+      "audit_url": null
     },
     {
       "post_url": "https://www.linkedin.com/posts/mary-fletcher-golden-86966538_golden-touch-cleaning-service-llc-anyone-share-7470985601698213889-7g_O/",
@@ -1163,10 +1329,13 @@
         "dm_sent": null,
         "dm_followup1_sent": null,
         "dm_followup2_sent": null,
-        "replied": null
+        "replied": null,
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [],
-      "author_headline": "Skip to search"
+      "author_headline": "Skip to search",
+      "audit_url": null
     },
     {
       "post_url": "https://www.linkedin.com/posts/xavier-jackson-1925b957_10-cheap-franchises-you-can-start-today-share-7470980535016722432-m3gu/",
@@ -1198,10 +1367,13 @@
         "dm_sent": null,
         "dm_followup1_sent": null,
         "dm_followup2_sent": null,
-        "replied": null
+        "replied": null,
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [],
-      "author_headline": "Skip to search"
+      "author_headline": "Skip to search",
+      "audit_url": null
     },
     {
       "post_url": "https://www.linkedin.com/posts/marquarious-collier-ba3974260_onefivesolutions-floorcare-commercialcleaning-ugcPost-7470976919514263552-7vph/",
@@ -1234,13 +1406,16 @@
         "dm_followup1_sent": null,
         "dm_followup2_sent": null,
         "replied": null,
-        "connection_checked": "2026-06-12T02:18:35.147262+00:00"
+        "connection_checked": "2026-06-12T02:18:35.147262+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T02:31:38.224676+00:00: connection_sent reverted — request did not go through; request previously withdrawn — cooldown applies"
       ],
       "author_headline": "Skip to search",
-      "connect_cooldown": true
+      "connect_cooldown": true,
+      "audit_url": null
     },
     {
       "post_url": "https://www.linkedin.com/posts/longislandlaundry_longislandlaundry-osha-glencove-share-7470969466571366401--hzc/",
@@ -1272,10 +1447,13 @@
         "dm_sent": null,
         "dm_followup1_sent": null,
         "dm_followup2_sent": null,
-        "replied": null
+        "replied": null,
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [],
-      "author_headline": "Skip to search"
+      "author_headline": "Skip to search",
+      "audit_url": null
     },
     {
       "post_url": "https://www.linkedin.com/posts/bobby-kingan-1ab374135_commercialcleaning-residentialcleaning-propertymaintenance-share-7470933686893527040-m9cI/",
@@ -1306,13 +1484,16 @@
         "connected": "2026-06-12T13:53:58.103638+00:00",
         "dm_followup1_sent": null,
         "dm_followup2_sent": null,
-        "connection_checked": "2026-06-12T02:18:40.024799+00:00"
+        "connection_checked": "2026-06-12T02:18:40.024799+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T02:56:57.558595+00:00: reverted from already_connected — Sales Nav Message button is InMail, not 1st degree",
         "2026-06-12T16:58:46.121708+00:00: reverted dm_sent -> connection_sent; InMail sent in error, still 3rd degree"
       ],
-      "author_headline": "Owner, Kingan Klean LLC"
+      "author_headline": "Owner, Kingan Klean LLC",
+      "audit_url": null
     },
     {
       "post_url": "https://www.linkedin.com/posts/yuri-yarmolchik-481206414_a-fresh-coat-of-paint-does-more-than-change-share-7470928550145998848-ATh-/",
@@ -1344,10 +1525,13 @@
         "dm_sent": null,
         "dm_followup1_sent": null,
         "dm_followup2_sent": null,
-        "replied": null
+        "replied": null,
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [],
-      "author_headline": "Skip to search"
+      "author_headline": "Skip to search",
+      "audit_url": null
     },
     {
       "post_url": "https://www.linkedin.com/posts/namah-pest-management-106712411_birdnetting-birdproofing-facilitymanagement-share-7470911733130227712-q-dp/",
@@ -1379,10 +1563,13 @@
         "dm_sent": null,
         "dm_followup1_sent": null,
         "dm_followup2_sent": null,
-        "replied": null
+        "replied": null,
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [],
-      "author_headline": "Skip to search"
+      "author_headline": "Skip to search",
+      "audit_url": null
     },
     {
       "post_url": "https://www.linkedin.com/posts/markus-oliveira-15944122b_home-share-7470910157921792000-efpI/",
@@ -1413,14 +1600,17 @@
         "connected": "2026-06-12T13:53:58.103680+00:00",
         "dm_followup1_sent": null,
         "dm_followup2_sent": null,
-        "connection_checked": "2026-06-12T02:18:45.100311+00:00"
+        "connection_checked": "2026-06-12T02:18:45.100311+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T02:31:38.224692+00:00: connection_sent reverted — request did not go through",
         "2026-06-12T02:56:57.558634+00:00: reverted from already_connected — Sales Nav Message button is InMail, not 1st degree",
         "2026-06-12T16:58:46.121708+00:00: disqualified — replied 'Nah I'm good. Thank you though.'"
       ],
-      "author_headline": "Author | Entrepreneur | Warehouse Operations"
+      "author_headline": "Author | Entrepreneur | Warehouse Operations",
+      "audit_url": null
     },
     {
       "post_url": "https://www.linkedin.com/posts/abhishek-nirakhe-34498060_lemon-a-wonder-of-nature-a-global-opportunity-share-7470904773286825984-c2hG/",
@@ -1452,10 +1642,13 @@
         "dm_sent": null,
         "dm_followup1_sent": null,
         "dm_followup2_sent": null,
-        "replied": null
+        "replied": null,
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [],
-      "author_headline": "Skip to search"
+      "author_headline": "Skip to search",
+      "audit_url": null
     },
     {
       "post_url": "https://www.linkedin.com/posts/angie-gordon_ive-been-pretty-quiet-on-linkedin-for-the-share-7470903872124018688-yjI9/",
@@ -1487,10 +1680,13 @@
         "dm_sent": null,
         "dm_followup1_sent": null,
         "dm_followup2_sent": null,
-        "replied": null
+        "replied": null,
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [],
-      "author_headline": "Skip to search"
+      "author_headline": "Skip to search",
+      "audit_url": null
     },
     {
       "post_url": "https://www.linkedin.com/posts/matthew-thoms-662a6025a_today-we-were-tasked-with-cleaning-the-front-ugcPost-7470901663621390336-lnOt/",
@@ -1522,10 +1718,13 @@
         "dm_sent": null,
         "dm_followup1_sent": null,
         "dm_followup2_sent": null,
-        "replied": null
+        "replied": null,
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [],
-      "author_headline": "Skip to search"
+      "author_headline": "Skip to search",
+      "audit_url": null
     },
     {
       "post_url": "https://www.linkedin.com/posts/bouchernicolas_top-finance-book-every-cfo-should-know-ugcPost-7470849190714040320-mX6U/",
@@ -1557,10 +1756,13 @@
         "dm_sent": null,
         "dm_followup1_sent": null,
         "dm_followup2_sent": null,
-        "replied": null
+        "replied": null,
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [],
-      "author_headline": "Skip to search"
+      "author_headline": "Skip to search",
+      "audit_url": null
     },
     {
       "post_url": "https://www.linkedin.com/posts/alexander-garcia-71b0a517a_the-most-successful-businesses-understand-share-7470894905083465728-HRMW/",
@@ -1593,12 +1795,16 @@
         "dm_followup1_sent": null,
         "dm_followup2_sent": null,
         "replied": "2026-06-12T13:58:32.344789+00:00",
-        "connection_checked": "2026-06-12T02:18:49.741639+00:00"
+        "connection_checked": "2026-06-12T02:18:49.741639+00:00",
+        "audit_sent": "2026-06-12T08:14:00+00:00",
+        "sales_call": null
       },
       "notes": [
-        "2026-06-12T02:56:57.558650+00:00: reverted from already_connected — Sales Nav Message button is InMail, not 1st degree"
+        "2026-06-12T02:56:57.558650+00:00: reverted from already_connected — Sales Nav Message button is InMail, not 1st degree",
+        "2026-06-12T17:17:46.398905+00:00: audit_sent marked — https://audits-delta.vercel.app/platinum-shine-co-fort-lupton.html"
       ],
-      "author_headline": "Founder - Platinum Shine Co. | Director of Operations & Client Relations - D and I Remodeling"
+      "author_headline": "Founder - Platinum Shine Co. | Director of Operations & Client Relations - D and I Remodeling",
+      "audit_url": "https://audits-delta.vercel.app/platinum-shine-co-fort-lupton.html"
     },
     {
       "post_url": "https://www.linkedin.com/posts/mark-milburn-49174b145_franchisepr-franchisepressreleases-franchiseelife-ugcPost-7470894662631854082-af0Q/",
@@ -1630,10 +1836,13 @@
         "dm_sent": null,
         "dm_followup1_sent": null,
         "dm_followup2_sent": null,
-        "replied": null
+        "replied": null,
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [],
-      "author_headline": "Skip to search"
+      "author_headline": "Skip to search",
+      "audit_url": null
     },
     {
       "post_url": "https://www.linkedin.com/posts/formula850_6-ways-people-use-credit-to-make-money-share-7470891161621086208-hfrc/",
@@ -1666,12 +1875,15 @@
         "dm_followup1_sent": null,
         "dm_followup2_sent": null,
         "replied": null,
-        "disqualified": "2026-06-12T02:18:02.877853+00:00"
+        "disqualified": "2026-06-12T02:18:02.877853+00:00",
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [
         "2026-06-12T02:18:02.877871+00:00: disqualified — off-topic post (credit/box trucks, not cleaning)"
       ],
-      "author_headline": "Skip to search"
+      "author_headline": "Skip to search",
+      "audit_url": null
     },
     {
       "post_url": "https://www.linkedin.com/posts/francis-x-williams_%F0%9D%97%A7%F0%9D%97%B5%F0%9D%97%B2-%F0%9D%97%96%F0%9D%97%B9%F0%9D%97%B2%F0%9D%97%AE%F0%9D%97%BB%F0%9D%97%B6%F0%9D%97%BB%F0%9D%97%B4-%F0%9D%97%95%F0%9D%98%82%F0%9D%98%80%F0%9D%97%B6%F0%9D%97%BB%F0%9D%97%B2%F0%9D%98%80%F0%9D%98%80-share-7469717913902645248-Ankp/",
@@ -1703,11 +1915,14 @@
         "dm_sent": null,
         "dm_followup1_sent": null,
         "dm_followup2_sent": null,
-        "replied": null
+        "replied": null,
+        "audit_sent": null,
+        "sales_call": null
       },
       "notes": [],
-      "author_headline": "Skip to search"
+      "author_headline": "Skip to search",
+      "audit_url": null
     }
   ],
-  "_synced_at": "2026-06-12T17:11:40.877466+00:00"
+  "_synced_at": "2026-06-12T17:21:25.088336+00:00"
 }

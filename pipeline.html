@@ -8,7 +8,7 @@
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: 'Inter', sans-serif; background: #F8FAFC; color: #1E293B; line-height: 1.6; }
-    .container { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+    .container { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
 
     .header { background: #0F172A; padding: 32px 0; }
     .header-brand { font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #64748B; margin-bottom: 8px; }
@@ -16,45 +16,51 @@
     .header-meta { font-size: 13px; color: #64748B; margin-top: 6px; }
     .header-meta span { color: #94A3B8; }
 
-    .stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; padding: 32px 0 0; }
-    .stat-card { background: #fff; border: 1px solid #E2E8F0; border-radius: 10px; padding: 22px 20px; }
-    .stat-eyebrow { font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #94A3B8; margin-bottom: 14px; }
-    .stat-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px; }
+    .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; padding: 28px 0 0; }
+    .stat-card { background: #fff; border: 1px solid #E2E8F0; border-radius: 10px; padding: 20px 18px; }
+    .stat-eyebrow { font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #94A3B8; margin-bottom: 12px; }
+    .stat-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 7px; }
     .stat-row:last-child { margin-bottom: 0; }
-    .stat-label { font-size: 13px; color: #64748B; }
-    .stat-value { font-size: 20px; font-weight: 800; color: #0F172A; }
-    .stat-value.rate { color: #16A34A; }
+    .stat-label { font-size: 12px; color: #64748B; }
+    .stat-value { font-size: 19px; font-weight: 800; color: #0F172A; }
+    .stat-value.green  { color: #16A34A; }
     .stat-value.orange { color: #F97316; }
-    .stat-divider { border: none; border-top: 1px solid #F1F5F9; margin: 12px 0; }
+    .stat-value.purple { color: #7C3AED; }
+    .stat-divider { border: none; border-top: 1px solid #F1F5F9; margin: 10px 0; }
 
-    .section { padding: 32px 0; }
-    .section-title { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #94A3B8; margin-bottom: 16px; }
+    .section { padding: 28px 0; }
+    .section-title { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #94A3B8; margin-bottom: 14px; }
 
-    table { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; font-size: 13px; }
-    thead th { background: #F8FAFC; padding: 10px 14px; text-align: left; font-size: 11px; font-weight: 700; text-transform: uppercase; color: #64748B; border-bottom: 1px solid #E2E8F0; }
-    tbody td { padding: 12px 14px; border-bottom: 1px solid #F8FAFC; color: #334155; vertical-align: middle; }
+    table { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; font-size: 12px; }
+    thead th { background: #F8FAFC; padding: 9px 12px; text-align: left; font-size: 10px; font-weight: 700; text-transform: uppercase; color: #64748B; border-bottom: 1px solid #E2E8F0; }
+    tbody td { padding: 11px 12px; border-bottom: 1px solid #F8FAFC; color: #334155; vertical-align: middle; }
     tbody tr:last-child td { border-bottom: none; }
     tbody tr:hover td { background: #F8FAFC; }
 
-    .badge { display: inline-flex; align-items: center; padding: 3px 10px; border-radius: 20px; font-size: 11px; font-weight: 700; white-space: nowrap; }
-    .badge-blue    { background: #EFF6FF; color: #1D4ED8; }
-    .badge-green   { background: #F0FDF4; color: #15803D; }
-    .badge-orange  { background: #FFF7ED; color: #C2410C; }
-    .badge-purple  { background: #FAF5FF; color: #7E22CE; }
-    .badge-gray    { background: #F1F5F9; color: #475569; }
+    .badge { display: inline-flex; align-items: center; padding: 2px 9px; border-radius: 20px; font-size: 11px; font-weight: 700; white-space: nowrap; }
+    .badge-blue   { background: #EFF6FF; color: #1D4ED8; }
+    .badge-green  { background: #F0FDF4; color: #15803D; }
+    .badge-orange { background: #FFF7ED; color: #C2410C; }
+    .badge-purple { background: #FAF5FF; color: #6D28D9; }
+    .badge-gray   { background: #F1F5F9; color: #475569; }
 
-    .dot { width: 7px; height: 7px; border-radius: 50%; display: inline-block; margin-right: 6px; }
-    .dot-green  { background: #16A34A; }
-    .dot-orange { background: #F97316; }
-    .dot-gray   { background: #CBD5E1; }
+    .check { color: #16A34A; font-weight: 700; font-size: 13px; }
+    .dash  { color: #CBD5E1; }
 
-    .progress-bar { display: flex; gap: 4px; align-items: center; }
-    .pip { width: 18px; height: 6px; border-radius: 3px; }
-    .pip-done   { background: #16A34A; }
-    .pip-empty  { background: #E2E8F0; }
+    .pip-row { display: flex; gap: 3px; align-items: center; }
+    .pip { width: 16px; height: 5px; border-radius: 3px; }
+    .pip-done  { background: #16A34A; }
+    .pip-empty { background: #E2E8F0; }
 
-    .updated { font-size: 12px; color: #94A3B8; padding: 24px 0 32px; text-align: right; }
+    .audit-link { color: #F97316; font-weight: 600; text-decoration: none; font-size: 11px; }
+    .audit-link:hover { text-decoration: underline; }
+
+    .footer { padding: 16px 0 32px; text-align: right; font-size: 12px; color: #94A3B8; }
     .error-msg { background: #FEF2F2; border: 1px solid #FECACA; border-radius: 8px; padding: 16px 20px; color: #DC2626; font-size: 14px; margin-top: 24px; }
+
+    @media (max-width: 700px) {
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    }
   </style>
 </head>
 <body>
@@ -68,30 +74,31 @@
 </div>
 
 <div class="container">
-  <div class="stats-grid" id="stats-grid">
-    <!-- populated by JS -->
-  </div>
+
+  <div class="stats-grid" id="stats-grid"></div>
 
   <div class="section">
     <div class="section-title">Active Leads</div>
-    <table id="leads-table">
+    <table>
       <thead>
         <tr>
           <th>Name</th>
           <th>Stage</th>
-          <th>Progress</th>
+          <th>DM progress</th>
           <th>Conn sent</th>
           <th>DM sent</th>
+          <th>Audit sent</th>
+          <th>Sales call</th>
           <th>Replied</th>
         </tr>
       </thead>
       <tbody id="leads-body">
-        <tr><td colspan="6" style="color:#94A3B8;padding:20px 14px">Loading…</td></tr>
+        <tr><td colspan="8" style="color:#94A3B8;padding:20px 12px">Loading…</td></tr>
       </tbody>
     </table>
   </div>
 
-  <div class="updated" id="footer-updated"></div>
+  <div class="footer" id="footer"></div>
 </div>
 
 <script>
@@ -102,12 +109,12 @@ const STAGE_ORDER = [
 ];
 
 const STAGE_LABEL = {
-  connection_sent:      "Conn pending",
-  connected:            "Connected",
-  dm_sent:              "DM sent",
-  dm_followup1_sent:    "Follow-up 1",
-  dm_followup2_sent:    "Follow-up 2",
-  replied:              "Replied",
+  connection_sent:   "Conn pending",
+  connected:         "Connected",
+  dm_sent:           "DM sent",
+  dm_followup1_sent: "Follow-up 1",
+  dm_followup2_sent: "Follow-up 2",
+  replied:           "Replied",
 };
 
 const STAGE_BADGE = {
@@ -121,16 +128,13 @@ const STAGE_BADGE = {
 
 const ACTIVE_STAGES = new Set(Object.keys(STAGE_LABEL));
 
-function date(ts) {
-  if (!ts) return "—";
-  return ts.slice(0, 10);
-}
+function d(ts) { return ts ? ts.slice(0,10) : null; }
+function cell(ts) { return ts ? `<span class="check">✓</span> ${d(ts)}` : `<span class="dash">—</span>`; }
 
-function progressPips(lead) {
-  // 3 pips: DM sent, FU1, FU2
-  const ts = lead.timestamps || {};
-  const steps = [ts.dm_sent, ts.dm_followup1_sent, ts.dm_followup2_sent];
-  return steps.map(s => `<div class="pip ${s ? 'pip-done' : 'pip-empty'}"></div>`).join("");
+function pips(l) {
+  const ts = l.timestamps || {};
+  return [ts.dm_sent, ts.dm_followup1_sent, ts.dm_followup2_sent]
+    .map(s => `<div class="pip ${s ? 'pip-done' : 'pip-empty'}"></div>`).join("");
 }
 
 async function load() {
@@ -139,83 +143,104 @@ async function load() {
     const res = await fetch(`data/leads.json?t=${Date.now()}`);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     data = await res.json();
-  } catch (e) {
+  } catch(e) {
     document.getElementById("leads-body").innerHTML =
-      `<tr><td colspan="6"><div class="error-msg">Failed to load pipeline data: ${e.message}</div></td></tr>`;
+      `<tr><td colspan="8"><div class="error-msg">Failed to load: ${e.message}</div></td></tr>`;
     return;
   }
 
   const leads = data.leads || [];
   const active = leads.filter(l => l.stage !== "disqualified");
 
-  // ── Connection stats ──────────────────────────────────────────────────────
+  // Connection stats
   const connSent     = active.filter(l => l.timestamps?.connection_sent);
   const beyondConn   = new Set(["connected","dm_sent","dm_followup1_sent","dm_followup2_sent","replied"]);
   const connAccepted = connSent.filter(l => beyondConn.has(l.stage) || l.timestamps?.connected);
-  const connRate     = connSent.length ? Math.round(connAccepted.length / connSent.length * 100) : 0;
   const connPending  = connSent.filter(l => !beyondConn.has(l.stage) && !l.timestamps?.connected);
+  const connRate     = connSent.length ? Math.round(connAccepted.length / connSent.length * 100) : 0;
 
-  // ── DM stats ──────────────────────────────────────────────────────────────
-  const dmSent   = active.filter(l => l.timestamps?.dm_sent);
-  const replied  = active.filter(l => l.stage === "replied" || l.timestamps?.replied);
+  // DM stats
+  const dmSent    = active.filter(l => l.timestamps?.dm_sent);
+  const replied   = active.filter(l => l.stage === "replied" || l.timestamps?.replied);
   const replyRate = dmSent.length ? Math.round(replied.length / dmSent.length * 100) : 0;
 
-  // ── Render stat cards ─────────────────────────────────────────────────────
+  // Audit & sales call stats
+  const auditSent  = active.filter(l => l.timestamps?.audit_sent);
+  const salesCalls = active.filter(l => l.timestamps?.sales_call);
+
+  // Progress breakdown
+  const fu1 = active.filter(l => l.timestamps?.dm_followup1_sent);
+  const fu2 = active.filter(l => l.timestamps?.dm_followup2_sent);
+
+  // Stat cards
   document.getElementById("stats-grid").innerHTML = `
     <div class="stat-card">
-      <div class="stat-eyebrow">Connection Requests</div>
+      <div class="stat-eyebrow">Connections</div>
       <div class="stat-row"><span class="stat-label">Sent</span><span class="stat-value">${connSent.length}</span></div>
       <div class="stat-row"><span class="stat-label">Accepted</span><span class="stat-value">${connAccepted.length}</span></div>
       <hr class="stat-divider">
-      <div class="stat-row"><span class="stat-label">Acceptance rate</span><span class="stat-value rate">${connRate}%</span></div>
-      <div class="stat-row"><span class="stat-label">Still pending</span><span class="stat-value orange">${connPending.length}</span></div>
+      <div class="stat-row"><span class="stat-label">Acceptance rate</span><span class="stat-value green">${connRate}%</span></div>
+      <div class="stat-row"><span class="stat-label">Pending</span><span class="stat-value orange">${connPending.length}</span></div>
     </div>
     <div class="stat-card">
       <div class="stat-eyebrow">DM Funnel</div>
       <div class="stat-row"><span class="stat-label">DMs sent</span><span class="stat-value">${dmSent.length}</span></div>
       <div class="stat-row"><span class="stat-label">Replied</span><span class="stat-value">${replied.length}</span></div>
       <hr class="stat-divider">
-      <div class="stat-row"><span class="stat-label">Reply rate</span><span class="stat-value rate">${replyRate}%</span></div>
+      <div class="stat-row"><span class="stat-label">Reply rate</span><span class="stat-value green">${replyRate}%</span></div>
     </div>
     <div class="stat-card">
-      <div class="stat-eyebrow">Progress Breakdown</div>
-      <div class="stat-row"><span class="stat-label">1st DM sent</span><span class="stat-value">${dmSent.length}</span></div>
-      <div class="stat-row"><span class="stat-label">Follow-up 1 sent</span><span class="stat-value">${active.filter(l=>l.timestamps?.dm_followup1_sent).length}</span></div>
-      <div class="stat-row"><span class="stat-label">Follow-up 2 sent</span><span class="stat-value">${active.filter(l=>l.timestamps?.dm_followup2_sent).length}</span></div>
+      <div class="stat-eyebrow">Audits & Calls</div>
+      <div class="stat-row"><span class="stat-label">Audits sent</span><span class="stat-value">${auditSent.length}</span></div>
+      <div class="stat-row"><span class="stat-label">Sales calls</span><span class="stat-value purple">${salesCalls.length}</span></div>
       <hr class="stat-divider">
-      <div class="stat-row"><span class="stat-label">Replied</span><span class="stat-value rate">${replied.length}</span></div>
+      ${auditSent.map(l => `<div class="stat-row" style="margin-top:4px"><span class="stat-label" style="font-size:11px">${l.author_name.split(' ')[0]}</span>${l.audit_url ? `<a class="audit-link" href="${l.audit_url}" target="_blank">view</a>` : ''}</div>`).join("")}
+    </div>
+    <div class="stat-card">
+      <div class="stat-eyebrow">DM Progress</div>
+      <div class="stat-row"><span class="stat-label">1st DM sent</span><span class="stat-value">${dmSent.length}</span></div>
+      <div class="stat-row"><span class="stat-label">Follow-up 1</span><span class="stat-value">${fu1.length}</span></div>
+      <div class="stat-row"><span class="stat-label">Follow-up 2</span><span class="stat-value">${fu2.length}</span></div>
+      <hr class="stat-divider">
+      <div class="stat-row"><span class="stat-label">Replied</span><span class="stat-value green">${replied.length}</span></div>
     </div>
   `;
 
-  // ── Active leads table ────────────────────────────────────────────────────
+  // Leads table
   const tableLeads = active
     .filter(l => ACTIVE_STAGES.has(l.stage))
-    .sort((a, b) => STAGE_ORDER.indexOf(a.stage) - STAGE_ORDER.indexOf(b.stage));
+    .sort((a,b) => STAGE_ORDER.indexOf(b.stage) - STAGE_ORDER.indexOf(a.stage));
 
   if (!tableLeads.length) {
     document.getElementById("leads-body").innerHTML =
-      `<tr><td colspan="6" style="color:#94A3B8;padding:20px 14px">No active leads.</td></tr>`;
+      `<tr><td colspan="8" style="color:#94A3B8;padding:20px 12px">No active leads.</td></tr>`;
   } else {
     document.getElementById("leads-body").innerHTML = tableLeads.map(l => {
-      const badge = STAGE_BADGE[l.stage] || "badge-gray";
-      const label = STAGE_LABEL[l.stage] || l.stage;
       const ts = l.timestamps || {};
+      const badge = STAGE_BADGE[l.stage] || "badge-gray";
+      const auditCell = ts.audit_sent
+        ? `<span class="check">✓</span> ${l.audit_url ? `<a class="audit-link" href="${l.audit_url}" target="_blank">${d(ts.audit_sent)}</a>` : d(ts.audit_sent)}`
+        : `<span class="dash">—</span>`;
+      const callCell = ts.sales_call
+        ? `<span class="check">✓</span> ${d(ts.sales_call)}`
+        : `<span class="dash">—</span>`;
       return `
         <tr>
           <td><a href="${l.author_profile_url}" target="_blank" style="color:#0F172A;font-weight:600;text-decoration:none">${l.author_name}</a></td>
-          <td><span class="badge ${badge}">${label}</span></td>
-          <td><div class="progress-bar">${progressPips(l)}</div></td>
-          <td>${date(ts.connection_sent)}</td>
-          <td>${date(ts.dm_sent)}</td>
-          <td>${ts.replied ? `<span class="dot dot-green"></span>${date(ts.replied)}` : `<span class="dot dot-gray"></span>—`}</td>
+          <td><span class="badge ${badge}">${STAGE_LABEL[l.stage] || l.stage}</span></td>
+          <td><div class="pip-row">${pips(l)}</div></td>
+          <td>${cell(ts.connection_sent)}</td>
+          <td>${cell(ts.dm_sent)}</td>
+          <td>${auditCell}</td>
+          <td>${callCell}</td>
+          <td>${cell(ts.replied)}</td>
         </tr>`;
     }).join("");
   }
 
-  // ── Last updated ──────────────────────────────────────────────────────────
   const synced = data._synced_at ? new Date(data._synced_at).toLocaleString() : "unknown";
   document.getElementById("last-updated").innerHTML = `Last synced: <span>${synced}</span>`;
-  document.getElementById("footer-updated").textContent = `Data synced: ${synced}`;
+  document.getElementById("footer").textContent = `Data synced: ${synced}`;
 }
 
 load();
