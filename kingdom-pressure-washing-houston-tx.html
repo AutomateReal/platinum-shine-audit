@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Visibility Audit — Kingdom Pressure Washing</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #F8FAFC; color: #1E293B; line-height: 1.6; }
+    .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+    .header { background: #fff; border-bottom: 1px solid #E2E8F0; padding: 32px 0; }
+    .header-prepared { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #94A3B8; margin-bottom: 10px; }
+    .header-business { font-size: 30px; font-weight: 900; color: #0F172A; letter-spacing: -0.02em; margin-bottom: 4px; }
+    .header-sub { font-size: 15px; color: #64748B; }
+    .score-section { background: #fff; padding: 40px 0; border-bottom: 1px solid #E2E8F0; }
+    .score-inner { display: flex; align-items: flex-start; gap: 28px; }
+    .score-badge { flex-shrink: 0; width: 104px; height: 104px; border-radius: 50%; background: #F97316; box-shadow: 0 0 0 6px #FFF7ED; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+    .score-num   { font-size: 38px; font-weight: 900; color: #fff; line-height: 1; }
+    .score-denom { font-size: 10px; font-weight: 600; color: rgba(255,255,255,0.75); letter-spacing: 0.06em; text-transform: uppercase; }
+    .score-copy h2 { font-size: 20px; font-weight: 800; color: #F97316; margin-bottom: 10px; }
+    .score-copy p  { font-size: 15px; color: #475569; line-height: 1.75; }
+    .stats-bar { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 32px; }
+    .stat { background: #fff; border: 1px solid #E2E8F0; border-radius: 10px; padding: 18px 14px; text-align: center; }
+    .stat-val { font-size: 26px; font-weight: 900; color: #0F172A; line-height: 1.1; }
+    .stat-val.red    { color: #EF4444; }
+    .stat-val.green  { color: #16A34A; }
+    .stat-val.orange { color: #F97316; }
+    .stat-lbl { font-size: 10px; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase; color: #94A3B8; margin-top: 5px; }
+    .table-section { background: #fff; border-bottom: 1px solid #E2E8F0; padding: 40px 0; }
+    .eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #94A3B8; margin-bottom: 16px; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    thead th { background: #F1F5F9; padding: 10px 14px; text-align: left; font-size: 11px; font-weight: 700; text-transform: uppercase; color: #64748B; }
+    tbody td { padding: 14px 14px; color: #334155; }
+    .badge { display: inline-flex; align-items: center; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 700; }
+    .badge-absent { background: #FEE2E2; color: #DC2626; }
+    .alert { border-radius: 8px; padding: 16px 18px; margin: 20px 0; display: flex; gap: 12px; align-items: flex-start; }
+    .alert-blue  { background: #EFF6FF; border: 1px solid #BFDBFE; }
+    .alert-green { background: #F0FDF4; border: 1px solid #BBF7D0; }
+    .alert-icon  { font-size: 17px; flex-shrink: 0; margin-top: 2px; }
+    .alert-body  { font-size: 14px; color: #374151; line-height: 1.65; }
+    .alert-body strong { color: #111827; }
+    .opp-banner { background: linear-gradient(135deg, #14532D 0%, #0F172A 100%); border-radius: 10px; padding: 24px 28px; margin: 24px 0; display: flex; gap: 16px; align-items: flex-start; }
+    .opp-icon  { font-size: 28px; flex-shrink: 0; }
+    .opp-text  { color: #E2E8F0; font-size: 14px; line-height: 1.7; }
+    .opp-text strong { color: #fff; font-size: 15px; display: block; margin-bottom: 6px; }
+    .issues-section { padding: 40px 0; }
+    .issue { background: #fff; border: 1px solid #E2E8F0; border-left: 4px solid #F97316; border-radius: 0 10px 10px 0; padding: 22px 24px; margin-bottom: 16px; }
+    .issue-title { font-size: 15px; font-weight: 700; color: #EA580C; margin-bottom: 10px; }
+    .issue-body  { font-size: 14px; color: #475569; line-height: 1.75; }
+    .cta-section { background: #0F172A; padding: 60px 0; text-align: center; }
+    .cta-h    { font-size: 28px; font-weight: 900; color: #fff; line-height: 1.25; margin-bottom: 18px; }
+    .cta-body { font-size: 15px; color: #94A3B8; line-height: 1.75; max-width: 500px; margin: 0 auto 36px; }
+    .cta-btn  { display: inline-block; background: #16A34A; color: #fff; font-size: 16px; font-weight: 700; padding: 18px 40px; border-radius: 8px; text-decoration: none; }
+    .footer { background: #0F172A; border-top: 1px solid #1E293B; padding: 22px 0; }
+    .footer-inner { display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: #475569; flex-wrap: wrap; gap: 8px; }
+    .footer a { color: #64748B; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <div class="container">
+    <div class="header-prepared">Prepared June 12, 2026</div>
+    <h1 class="header-business">Kingdom Pressure Washing</h1>
+    <p class="header-sub">Local Visibility Audit — Houston, TX</p>
+  </div>
+</div>
+
+<div class="score-section">
+  <div class="container">
+    <div class="score-inner">
+      <div class="score-badge">
+        <span class="score-num">42</span>
+        <span class="score-denom">out of 100</span>
+      </div>
+      <div class="score-copy">
+        <h2>Strong Start — Wrong Target Market</h2>
+        <p>
+          16 reviews at 5.0 stars in the first month is genuinely impressive — most businesses take
+          6 months to get there. The foundation is real. The problem is that competing citywide in
+          Houston puts Kingdom up against operators with 270 to 1,700 reviews.
+          <strong>The fix isn't more reviews — it's targeting Cypress, Katy, and Spring first,</strong>
+          where the competition is a fraction of what it is downtown.
+        </p>
+      </div>
+    </div>
+
+    <div class="stats-bar">
+      <div class="stat">
+        <div class="stat-val green">16</div>
+        <div class="stat-lbl">Google Reviews</div>
+      </div>
+      <div class="stat">
+        <div class="stat-val red">0</div>
+        <div class="stat-lbl">Profile Photos</div>
+      </div>
+      <div class="stat">
+        <div class="stat-val red">—</div>
+        <div class="stat-lbl">Hours Set</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="table-section">
+  <div class="container">
+    <div class="eyebrow">Google Map Search Visibility — Houston, TX</div>
+    <table>
+      <thead>
+        <tr><th>Search Term</th><th>Position</th><th>#1 Competitor</th><th>Their Reviews</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>pressure washing Houston TX</td>
+          <td><span class="badge badge-absent">Not Ranking</span></td>
+          <td>APro Pressure Washing</td>
+          <td>1,700 reviews</td>
+        </tr>
+        <tr>
+          <td>house washing Houston TX</td>
+          <td><span class="badge badge-absent">Not Ranking</span></td>
+          <td>APro Pressure Washing</td>
+          <td>1,700 reviews</td>
+        </tr>
+        <tr>
+          <td>commercial pressure washing Houston</td>
+          <td><span class="badge badge-absent">Not Ranking</span></td>
+          <td>APro Pressure Washing</td>
+          <td>1,700 reviews</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="alert alert-blue">
+      <span class="alert-icon">💡</span>
+      <div class="alert-body">
+        <strong>APro Pressure Washing has 1,700 reviews and 30+ years in business.</strong>
+        Trying to outrank them citywide right now would take years. But they aren't the #1 result in Cypress, Katy, or Spring — Kingdom can be.
+      </div>
+    </div>
+
+    <div class="opp-banner">
+      <span class="opp-icon">🎯</span>
+      <div class="opp-text">
+        <strong>The suburbs are the real opportunity — and they're wide open.</strong>
+        Kingdom's description already lists Cypress, Tomball, Katy, and Spring as service areas.
+        These markets have 10x less competition than Houston proper. A business with 16 reviews
+        and a physical address pin in Cypress can rank #1 there within 30–60 days.
+        That's where the first calls come from.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="issues-section">
+  <div class="container">
+    <div class="eyebrow">3 Things to Fix Before Running Any Ads or SEO</div>
+
+    <div class="issue">
+      <div class="issue-title">⚠ Zero Photos on a Pressure Washing Profile — That's the Entire Sales Pitch Missing</div>
+      <div class="issue-body">
+        Pressure washing is a visual service. Before/after photos are the #1 conversion driver on
+        a GBP listing — customers decide to call based on seeing the work. The profile currently has
+        zero photos. Every job Dashon completes is a photo opportunity. Ten before/after shots would
+        immediately put Kingdom ahead of most competitors in the suburb markets and give Google
+        visual signals to surface the listing in image-forward searches.
+      </div>
+    </div>
+
+    <div class="issue">
+      <div class="issue-title">⚠ No Business Hours and No Attributes — The Profile Looks Inactive</div>
+      <div class="issue-body">
+        Google's algorithm treats a profile with no hours set as incomplete — and incomplete profiles
+        rank below complete ones even with similar review counts. Kingdom also has zero attributes set.
+        Attributes like "On-site services," "Free estimates," "Insured," and "Veteran-owned" (if applicable)
+        are trust signals customers filter by and ranking signals Google uses. These take 5 minutes to set
+        and have immediate impact.
+      </div>
+    </div>
+
+    <div class="issue">
+      <div class="issue-title">⚠ No Physical Address Pin — Limits Suburb Rankings to Guesswork</div>
+      <div class="issue-body">
+        Currently the profile is set as a service area business with no address pin. Google uses the
+        registered address as the geographic anchor for local pack rankings. Without a pin, Google
+        has to guess where to rank Kingdom — and it defaults to showing it far from where it actually
+        operates. A verified address in Cypress or Katy gives Google a fixed anchor, and proximity
+        is one of the three primary local pack ranking factors. This is the single highest-leverage
+        structural fix available.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cta-section">
+  <div class="container">
+    <h2 class="cta-h">16 Reviews in Month One.<br>Now Let's Get the Calls to Match.</h2>
+    <p class="cta-body">
+      In the first 14 days I'll set up the full profile — hours, attributes, photo strategy,
+      suburb-targeted service areas, and a review request sequence to keep the momentum going.
+      No cost. You'll see the profile move before deciding whether to continue.
+    </p>
+    <a href="https://link.localbizboost.com/widget/booking/lobOMW2RpbL2Vu9SblWG" class="cta-btn">Book a Free 15-Minute Call</a>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <span>Prepared by <a href="https://localbizboost.com">Milos Perdic · LocalBizBoost.com</a></span>
+      <span>Data sourced from Google Business Profile &amp; Google Search — June 12, 2026</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
