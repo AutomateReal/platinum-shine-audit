@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinkedIn Pipeline — Local Biz Boost</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: #F8FAFC; color: #1E293B; line-height: 1.6; }
+    .container { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+
+    .header { background: #0F172A; padding: 32px 0; }
+    .header-brand { font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #64748B; margin-bottom: 8px; }
+    .header h1 { font-size: 24px; font-weight: 900; color: #fff; letter-spacing: -0.02em; }
+    .header-meta { font-size: 13px; color: #64748B; margin-top: 6px; }
+    .header-meta span { color: #94A3B8; }
+
+    .stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; padding: 32px 0 0; }
+    .stat-card { background: #fff; border: 1px solid #E2E8F0; border-radius: 10px; padding: 22px 20px; }
+    .stat-eyebrow { font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #94A3B8; margin-bottom: 14px; }
+    .stat-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px; }
+    .stat-row:last-child { margin-bottom: 0; }
+    .stat-label { font-size: 13px; color: #64748B; }
+    .stat-value { font-size: 20px; font-weight: 800; color: #0F172A; }
+    .stat-value.rate { color: #16A34A; }
+    .stat-value.orange { color: #F97316; }
+    .stat-divider { border: none; border-top: 1px solid #F1F5F9; margin: 12px 0; }
+
+    .section { padding: 32px 0; }
+    .section-title { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #94A3B8; margin-bottom: 16px; }
+
+    table { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; font-size: 13px; }
+    thead th { background: #F8FAFC; padding: 10px 14px; text-align: left; font-size: 11px; font-weight: 700; text-transform: uppercase; color: #64748B; border-bottom: 1px solid #E2E8F0; }
+    tbody td { padding: 12px 14px; border-bottom: 1px solid #F8FAFC; color: #334155; vertical-align: middle; }
+    tbody tr:last-child td { border-bottom: none; }
+    tbody tr:hover td { background: #F8FAFC; }
+
+    .badge { display: inline-flex; align-items: center; padding: 3px 10px; border-radius: 20px; font-size: 11px; font-weight: 700; white-space: nowrap; }
+    .badge-blue    { background: #EFF6FF; color: #1D4ED8; }
+    .badge-green   { background: #F0FDF4; color: #15803D; }
+    .badge-orange  { background: #FFF7ED; color: #C2410C; }
+    .badge-purple  { background: #FAF5FF; color: #7E22CE; }
+    .badge-gray    { background: #F1F5F9; color: #475569; }
+
+    .dot { width: 7px; height: 7px; border-radius: 50%; display: inline-block; margin-right: 6px; }
+    .dot-green  { background: #16A34A; }
+    .dot-orange { background: #F97316; }
+    .dot-gray   { background: #CBD5E1; }
+
+    .progress-bar { display: flex; gap: 4px; align-items: center; }
+    .pip { width: 18px; height: 6px; border-radius: 3px; }
+    .pip-done   { background: #16A34A; }
+    .pip-empty  { background: #E2E8F0; }
+
+    .updated { font-size: 12px; color: #94A3B8; padding: 24px 0 32px; text-align: right; }
+    .error-msg { background: #FEF2F2; border: 1px solid #FECACA; border-radius: 8px; padding: 16px 20px; color: #DC2626; font-size: 14px; margin-top: 24px; }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <div class="container">
+    <div class="header-brand">Local Biz Boost</div>
+    <h1>LinkedIn Pipeline</h1>
+    <div class="header-meta" id="last-updated">Loading…</div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="stats-grid" id="stats-grid">
+    <!-- populated by JS -->
+  </div>
+
+  <div class="section">
+    <div class="section-title">Active Leads</div>
+    <table id="leads-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Stage</th>
+          <th>Progress</th>
+          <th>Conn sent</th>
+          <th>DM sent</th>
+          <th>Replied</th>
+        </tr>
+      </thead>
+      <tbody id="leads-body">
+        <tr><td colspan="6" style="color:#94A3B8;padding:20px 14px">Loading…</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="updated" id="footer-updated"></div>
+</div>
+
+<script>
+const STAGE_ORDER = [
+  "found","icp_scored","icp_qualified","connection_checked","already_connected",
+  "liked","commented","connection_sent","connected",
+  "dm_sent","dm_followup1_sent","dm_followup2_sent","replied"
+];
+
+const STAGE_LABEL = {
+  connection_sent:      "Conn pending",
+  connected:            "Connected",
+  dm_sent:              "DM sent",
+  dm_followup1_sent:    "Follow-up 1",
+  dm_followup2_sent:    "Follow-up 2",
+  replied:              "Replied",
+};
+
+const STAGE_BADGE = {
+  connection_sent:   "badge-blue",
+  connected:         "badge-orange",
+  dm_sent:           "badge-orange",
+  dm_followup1_sent: "badge-orange",
+  dm_followup2_sent: "badge-orange",
+  replied:           "badge-green",
+};
+
+const ACTIVE_STAGES = new Set(Object.keys(STAGE_LABEL));
+
+function date(ts) {
+  if (!ts) return "—";
+  return ts.slice(0, 10);
+}
+
+function progressPips(lead) {
+  // 3 pips: DM sent, FU1, FU2
+  const ts = lead.timestamps || {};
+  const steps = [ts.dm_sent, ts.dm_followup1_sent, ts.dm_followup2_sent];
+  return steps.map(s => `<div class="pip ${s ? 'pip-done' : 'pip-empty'}"></div>`).join("");
+}
+
+async function load() {
+  let data;
+  try {
+    const res = await fetch(`data/leads.json?t=${Date.now()}`);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    data = await res.json();
+  } catch (e) {
+    document.getElementById("leads-body").innerHTML =
+      `<tr><td colspan="6"><div class="error-msg">Failed to load pipeline data: ${e.message}</div></td></tr>`;
+    return;
+  }
+
+  const leads = data.leads || [];
+  const active = leads.filter(l => l.stage !== "disqualified");
+
+  // ── Connection stats ──────────────────────────────────────────────────────
+  const connSent     = active.filter(l => l.timestamps?.connection_sent);
+  const beyondConn   = new Set(["connected","dm_sent","dm_followup1_sent","dm_followup2_sent","replied"]);
+  const connAccepted = connSent.filter(l => beyondConn.has(l.stage) || l.timestamps?.connected);
+  const connRate     = connSent.length ? Math.round(connAccepted.length / connSent.length * 100) : 0;
+  const connPending  = connSent.filter(l => !beyondConn.has(l.stage) && !l.timestamps?.connected);
+
+  // ── DM stats ──────────────────────────────────────────────────────────────
+  const dmSent   = active.filter(l => l.timestamps?.dm_sent);
+  const replied  = active.filter(l => l.stage === "replied" || l.timestamps?.replied);
+  const replyRate = dmSent.length ? Math.round(replied.length / dmSent.length * 100) : 0;
+
+  // ── Render stat cards ─────────────────────────────────────────────────────
+  document.getElementById("stats-grid").innerHTML = `
+    <div class="stat-card">
+      <div class="stat-eyebrow">Connection Requests</div>
+      <div class="stat-row"><span class="stat-label">Sent</span><span class="stat-value">${connSent.length}</span></div>
+      <div class="stat-row"><span class="stat-label">Accepted</span><span class="stat-value">${connAccepted.length}</span></div>
+      <hr class="stat-divider">
+      <div class="stat-row"><span class="stat-label">Acceptance rate</span><span class="stat-value rate">${connRate}%</span></div>
+      <div class="stat-row"><span class="stat-label">Still pending</span><span class="stat-value orange">${connPending.length}</span></div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-eyebrow">DM Funnel</div>
+      <div class="stat-row"><span class="stat-label">DMs sent</span><span class="stat-value">${dmSent.length}</span></div>
+      <div class="stat-row"><span class="stat-label">Replied</span><span class="stat-value">${replied.length}</span></div>
+      <hr class="stat-divider">
+      <div class="stat-row"><span class="stat-label">Reply rate</span><span class="stat-value rate">${replyRate}%</span></div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-eyebrow">Progress Breakdown</div>
+      <div class="stat-row"><span class="stat-label">1st DM sent</span><span class="stat-value">${dmSent.length}</span></div>
+      <div class="stat-row"><span class="stat-label">Follow-up 1 sent</span><span class="stat-value">${active.filter(l=>l.timestamps?.dm_followup1_sent).length}</span></div>
+      <div class="stat-row"><span class="stat-label">Follow-up 2 sent</span><span class="stat-value">${active.filter(l=>l.timestamps?.dm_followup2_sent).length}</span></div>
+      <hr class="stat-divider">
+      <div class="stat-row"><span class="stat-label">Replied</span><span class="stat-value rate">${replied.length}</span></div>
+    </div>
+  `;
+
+  // ── Active leads table ────────────────────────────────────────────────────
+  const tableLeads = active
+    .filter(l => ACTIVE_STAGES.has(l.stage))
+    .sort((a, b) => STAGE_ORDER.indexOf(a.stage) - STAGE_ORDER.indexOf(b.stage));
+
+  if (!tableLeads.length) {
+    document.getElementById("leads-body").innerHTML =
+      `<tr><td colspan="6" style="color:#94A3B8;padding:20px 14px">No active leads.</td></tr>`;
+  } else {
+    document.getElementById("leads-body").innerHTML = tableLeads.map(l => {
+      const badge = STAGE_BADGE[l.stage] || "badge-gray";
+      const label = STAGE_LABEL[l.stage] || l.stage;
+      const ts = l.timestamps || {};
+      return `
+        <tr>
+          <td><a href="${l.author_profile_url}" target="_blank" style="color:#0F172A;font-weight:600;text-decoration:none">${l.author_name}</a></td>
+          <td><span class="badge ${badge}">${label}</span></td>
+          <td><div class="progress-bar">${progressPips(l)}</div></td>
+          <td>${date(ts.connection_sent)}</td>
+          <td>${date(ts.dm_sent)}</td>
+          <td>${ts.replied ? `<span class="dot dot-green"></span>${date(ts.replied)}` : `<span class="dot dot-gray"></span>—`}</td>
+        </tr>`;
+    }).join("");
+  }
+
+  // ── Last updated ──────────────────────────────────────────────────────────
+  const synced = data._synced_at ? new Date(data._synced_at).toLocaleString() : "unknown";
+  document.getElementById("last-updated").innerHTML = `Last synced: <span>${synced}</span>`;
+  document.getElementById("footer-updated").textContent = `Data synced: ${synced}`;
+}
+
+load();
+</script>
+</body>
+</html>

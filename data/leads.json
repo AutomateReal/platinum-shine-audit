@@ -1,0 +1,1713 @@
+{
+  "_schema": "1.0",
+  "_description": "LinkedIn lead pipeline state machine",
+  "leads": [
+    {
+      "post_url": "",
+      "author_name": "Sara Shelton",
+      "author_profile_url": "https://www.linkedin.com/in/sara-shelton-b960377b",
+      "post_snippet": "🌟 Now Booking: Premium Cleaning Services with Shelton’s Janitorial! 🌟\nLooking for a cleaning company you can actually trust to get the job done right the first time? At Shelton’s Janitorial, we bring 5-star commercial and residential cleaning directly to your property.\nBased in Gridley, we proudly s",
+      "stage": "disqualified",
+      "icp_score": 0,
+      "icp_data": {
+        "score": 0,
+        "qualified": false,
+        "location": "",
+        "niche": null,
+        "role": null,
+        "size_signal": null,
+        "pain_signal": null,
+        "skip_reason": "outside US/Canada"
+      },
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:49:08.446106+00:00",
+        "icp_scored": "2026-06-12T01:49:21.276479+00:00",
+        "liked": null,
+        "commented": null,
+        "connection_sent": null,
+        "connected": null,
+        "dm_sent": null,
+        "dm_followup1_sent": null,
+        "dm_followup2_sent": null,
+        "replied": null
+      },
+      "notes": []
+    },
+    {
+      "post_url": "",
+      "author_name": "Aaron Langham",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.878343+00:00",
+        "disqualified": "2026-06-12T01:06:31.878343+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.878343+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "Ryan Mulligan",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.878343+00:00",
+        "disqualified": "2026-06-12T01:06:31.878343+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.878343+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "Jared Beesley",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.878343+00:00",
+        "disqualified": "2026-06-12T01:06:31.878343+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.878343+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "Corey Peters",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.880854+00:00",
+        "disqualified": "2026-06-12T01:06:31.880854+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.880854+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "Brian Manwarren",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.880854+00:00",
+        "disqualified": "2026-06-12T01:06:31.880854+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.880854+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "marissa misner",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.880854+00:00",
+        "disqualified": "2026-06-12T01:06:31.880854+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.880854+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "Amber Dace",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.880854+00:00",
+        "disqualified": "2026-06-12T01:06:31.880854+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.880854+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "Alejandro Saucedo",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.880854+00:00",
+        "disqualified": "2026-06-12T01:06:31.880854+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.880854+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "Jonathan Beckman",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.880854+00:00",
+        "disqualified": "2026-06-12T01:06:31.880854+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.880854+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "Jonathan Servello",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.880854+00:00",
+        "disqualified": "2026-06-12T01:06:31.880854+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.880854+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "Michael Lasser, Owner,. Window-Gutter Cleaning, Screen repair Specialist",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.883387+00:00",
+        "disqualified": "2026-06-12T01:06:31.883387+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.883387+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "Shawn Baker",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.883387+00:00",
+        "disqualified": "2026-06-12T01:06:31.883387+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.883387+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "Dawn Wood",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.883387+00:00",
+        "disqualified": "2026-06-12T01:06:31.883387+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.883387+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "Ismael Islas Gomez",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.883387+00:00",
+        "disqualified": "2026-06-12T01:06:31.883387+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.883387+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "Christopher Bamberg",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.883387+00:00",
+        "disqualified": "2026-06-12T01:06:31.883387+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.883387+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "Paula Jones",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.883387+00:00",
+        "disqualified": "2026-06-12T01:06:31.883387+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.883387+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "Ashley Avery",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.883387+00:00",
+        "disqualified": "2026-06-12T01:06:31.883387+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.883387+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "Ken Klink",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.883387+00:00",
+        "disqualified": "2026-06-12T01:06:31.883387+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.883387+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "Denis Sistek",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.883387+00:00",
+        "disqualified": "2026-06-12T01:06:31.883387+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.883387+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "Chris Stoner",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.883387+00:00",
+        "disqualified": "2026-06-12T01:06:31.883387+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.883387+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "Clarence Matthews",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.883387+00:00",
+        "disqualified": "2026-06-12T01:06:31.883387+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.883387+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "Scott Maland",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.883387+00:00",
+        "disqualified": "2026-06-12T01:06:31.883387+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.883387+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "Juan Rodriguez",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.883387+00:00",
+        "disqualified": "2026-06-12T01:06:31.883387+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.883387+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "Danny M.",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.883387+00:00",
+        "disqualified": "2026-06-12T01:06:31.883387+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.883387+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "Dylan Carvey",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.883387+00:00",
+        "disqualified": "2026-06-12T01:06:31.883387+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.883387+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "Artie Gold",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.883387+00:00",
+        "disqualified": "2026-06-12T01:06:31.883387+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.883387+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "Zach Tyler",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.888396+00:00",
+        "disqualified": "2026-06-12T01:06:31.888396+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.888396+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "Elbert V.",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.888396+00:00",
+        "disqualified": "2026-06-12T01:06:31.888396+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.888396+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "Trevor Schultz",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.888396+00:00",
+        "disqualified": "2026-06-12T01:06:31.888396+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.888396+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "Maria James",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.888396+00:00",
+        "disqualified": "2026-06-12T01:06:31.888396+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.888396+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "Kevin Slate",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.888396+00:00",
+        "disqualified": "2026-06-12T01:06:31.888396+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.888396+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "Luke Hansford",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.888396+00:00",
+        "disqualified": "2026-06-12T01:06:31.888396+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.888396+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "Serena Cole",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.888396+00:00",
+        "disqualified": "2026-06-12T01:06:31.888396+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.888396+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "Christina Wilkinson",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.888396+00:00",
+        "disqualified": "2026-06-12T01:06:31.888396+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.888396+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "Sean Frazier",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.888396+00:00",
+        "disqualified": "2026-06-12T01:06:31.888396+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.888396+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "James burge",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.888396+00:00",
+        "disqualified": "2026-06-12T01:06:31.888396+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.888396+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "Maria DeSouza",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.888396+00:00",
+        "disqualified": "2026-06-12T01:06:31.888396+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.888396+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "John Cooley",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.888396+00:00",
+        "disqualified": "2026-06-12T01:06:31.888396+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.888396+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "Taylor Moore",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.888396+00:00",
+        "disqualified": "2026-06-12T01:06:31.888396+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.888396+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "Jonathan Sherwood",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.888396+00:00",
+        "disqualified": "2026-06-12T01:06:31.888396+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.888396+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "Judd Machula",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.888396+00:00",
+        "disqualified": "2026-06-12T01:06:31.888396+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.888396+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "Holly Moore",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.893426+00:00",
+        "disqualified": "2026-06-12T01:06:31.893426+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.893426+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "Emily Wenning",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.893426+00:00",
+        "disqualified": "2026-06-12T01:06:31.893426+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.893426+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "Mark Howard",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.893426+00:00",
+        "disqualified": "2026-06-12T01:06:31.893426+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.893426+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "Joseph Pizzimenti",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.893426+00:00",
+        "disqualified": "2026-06-12T01:06:31.893426+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.893426+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "Jonathan Wicks",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.893426+00:00",
+        "disqualified": "2026-06-12T01:06:31.893426+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.893426+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "William Murrell III, CHMM",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.893426+00:00",
+        "disqualified": "2026-06-12T01:06:31.893426+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.893426+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "Ron Papke",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.893426+00:00",
+        "disqualified": "2026-06-12T01:06:31.893426+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.893426+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "Renée Onesti",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.893426+00:00",
+        "disqualified": "2026-06-12T01:06:31.893426+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.893426+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "",
+      "author_name": "Stephanie Pate",
+      "author_profile_url": "",
+      "post_snippet": "",
+      "stage": "disqualified",
+      "icp_score": null,
+      "icp_data": null,
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:06:31.893426+00:00",
+        "disqualified": "2026-06-12T01:06:31.893426+00:00"
+      },
+      "notes": [
+        "2026-06-12T01:06:31.893426+00:00: withdrawn — pre-pipeline contact"
+      ]
+    },
+    {
+      "post_url": "https://www.linkedin.com/posts/dashonenglish_propertymanagement-hoa-multifamilyhousing-share-7471005346778595328-TT7J/",
+      "author_name": "Dashon E.",
+      "author_profile_url": "https://www.linkedin.com/in/dashonenglish",
+      "post_snippet": "🏢 First impressions don’t stop at the front door.\n\nAs I’ve connected with more property managers, community associations, apartment operators, and construction professionals, one thing has become clear:\n\nClean properties lease faster, retain value better, and create a stronger experience for residen",
+      "stage": "dm_sent",
+      "icp_score": 60,
+      "icp_data": {
+        "location": "Houston, Texas, United States",
+        "niche": "clean",
+        "role": null,
+        "size_signal": "unknown",
+        "pain_signal": null,
+        "skip_reason": null,
+        "score": 60,
+        "qualified": true
+      },
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:49:08.446106+00:00",
+        "icp_scored": "2026-06-12T02:06:26.854306+00:00",
+        "liked": "2026-06-12T02:23:50.171342+00:00",
+        "commented": "2026-06-12T02:24:01.107438+00:00",
+        "connection_sent": "2026-06-12T02:51:00.072325+00:00",
+        "connected": null,
+        "dm_sent": "2026-06-12T16:40:36.203501+00:00",
+        "dm_followup1_sent": null,
+        "dm_followup2_sent": null,
+        "replied": null,
+        "connection_checked": "2026-06-12T02:18:25.279661+00:00"
+      },
+      "notes": [
+        "2026-06-12T02:31:38.224624+00:00: connection_sent reverted — request did not go through"
+      ],
+      "author_headline": "Commercial Pressure Washing | Apartment Communities | HOAs | Builders | Houston, TX"
+    },
+    {
+      "post_url": "https://www.linkedin.com/posts/trevor-downes-a237b8167_the-difference-between-earning-800-and-share-7471002486775078912-4U83/",
+      "author_name": "Trevor Downes",
+      "author_profile_url": "https://www.linkedin.com/in/trevor-downes-a237b8167",
+      "post_snippet": "💷 The Difference Between Earning £800 And £2,000+ Per Month From The Same Asset Class\n\nMany investors are attracted to Serviced Accommodation because of the income figures they see online.\n\n£800 per month from a Buy-to-Let versus £2,000+ from a Serviced Accommodation unit can make the choice seem ob",
+      "stage": "disqualified",
+      "icp_score": 0,
+      "icp_data": {
+        "location": "",
+        "niche": null,
+        "role": null,
+        "size_signal": "unknown",
+        "pain_signal": null,
+        "skip_reason": "outside US/Canada: no location",
+        "score": 0,
+        "qualified": false
+      },
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:49:08.446106+00:00",
+        "icp_scored": "2026-06-12T02:06:34.158584+00:00",
+        "liked": null,
+        "commented": null,
+        "connection_sent": null,
+        "connected": null,
+        "dm_sent": null,
+        "dm_followup1_sent": null,
+        "dm_followup2_sent": null,
+        "replied": null
+      },
+      "notes": [],
+      "author_headline": "Skip to search"
+    },
+    {
+      "post_url": "",
+      "author_name": "Sara Shelton",
+      "author_profile_url": "https://www.linkedin.com/in/sara-shelton-b960377b",
+      "post_snippet": "🌟 Now Booking: Premium Cleaning Services with Shelton’s Janitorial! 🌟\nLooking for a cleaning company you can actually trust to get the job done right the first time? At Shelton’s Janitorial, we bring 5-star commercial and residential cleaning directly to your property.\nBased in Gridley, we proudly s",
+      "stage": "disqualified",
+      "icp_score": 0,
+      "icp_data": {
+        "score": 0,
+        "qualified": false,
+        "location": "",
+        "niche": null,
+        "role": null,
+        "size_signal": null,
+        "pain_signal": null,
+        "skip_reason": "outside US/Canada"
+      },
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:49:08.446106+00:00",
+        "icp_scored": "2026-06-12T01:49:21.276479+00:00",
+        "liked": null,
+        "commented": null,
+        "connection_sent": null,
+        "connected": null,
+        "dm_sent": null,
+        "dm_followup1_sent": null,
+        "dm_followup2_sent": null,
+        "replied": null
+      },
+      "notes": []
+    },
+    {
+      "post_url": "https://www.linkedin.com/posts/mauricio-munoz-5076161a9_roofcleaning-residentialcleaning-propertymaintenance-ugcPost-7470991166977683456-7NYS/",
+      "author_name": "Mauricio Munoz",
+      "author_profile_url": "https://www.linkedin.com/in/mauricio-munoz-5076161a9",
+      "post_snippet": "𝗧𝗮𝗺𝗽𝗮 𝗕𝗮𝘆 𝗠𝗲𝗱𝗶𝘁𝗲𝗿𝗿𝗮𝗻𝗲𝗮𝗻 𝗩𝗶𝗹𝗹𝗮 𝗥𝗲𝘀𝘁𝗼𝗿𝗮𝘁𝗶𝗼𝗻 (𝟯/𝟯): 𝗖𝗼𝗺𝗽𝗹𝗲𝘁𝗲 𝗥𝗼𝗼𝗳 & 𝗘𝘅𝘁𝗲𝗿𝗶𝗼𝗿 𝗥𝗲𝘃𝗶𝘃𝗮𝗹 | 𝗗𝗣𝗜 𝗖𝗹𝗲𝗮𝗿𝘄𝗮𝘁𝗲𝗿\n\nAt this Tampa Bay Mediterranean villa, we addressed years of weathering and Florida's harsh climate effects. Watch how we restored this elegant home's roof, exterior walls, and architectural details t",
+      "stage": "connection_sent",
+      "icp_score": 60,
+      "icp_data": {
+        "location": "Clearwater, Florida, United States",
+        "niche": "roof",
+        "role": null,
+        "size_signal": "unknown",
+        "pain_signal": null,
+        "skip_reason": null,
+        "score": 60,
+        "qualified": true
+      },
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:49:08.446106+00:00",
+        "icp_scored": "2026-06-12T02:06:41.367833+00:00",
+        "liked": "2026-06-12T02:24:22.468800+00:00",
+        "commented": "2026-06-12T02:24:34.593445+00:00",
+        "connection_sent": "2026-06-12T02:55:38.896937+00:00",
+        "connected": null,
+        "dm_sent": null,
+        "dm_followup1_sent": null,
+        "dm_followup2_sent": null,
+        "replied": null,
+        "connection_checked": "2026-06-12T02:18:30.600205+00:00"
+      },
+      "notes": [
+        "2026-06-12T02:31:38.224662+00:00: connection_sent reverted — request did not go through",
+        "2026-06-12T02:53:26.842576+00:00: reverted from connection_sent — pending was stale (old withdrawn request), actual send never happened",
+        "2026-06-12T02:55:38.896955+00:00: confirmed pending — request sent last week"
+      ],
+      "author_headline": "Skip to search"
+    },
+    {
+      "post_url": "https://www.linkedin.com/posts/mary-fletcher-golden-86966538_golden-touch-cleaning-service-llc-anyone-share-7470985601698213889-7g_O/",
+      "author_name": "Mary & Fletcher Golden",
+      "author_profile_url": "https://www.linkedin.com/in/mary-fletcher-golden-86966538",
+      "post_snippet": "Golden touch cleaning service LLC anyone looking for commercial cleaning homes move out moving also we clean hoarder homes. Please reach out to me. We are excellent and what we do.",
+      "stage": "disqualified",
+      "icp_score": 0,
+      "icp_data": {
+        "location": "",
+        "niche": null,
+        "role": null,
+        "size_signal": "unknown",
+        "pain_signal": null,
+        "skip_reason": "outside US/Canada: no location",
+        "score": 0,
+        "qualified": false
+      },
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:49:08.446106+00:00",
+        "icp_scored": "2026-06-12T02:06:48.399054+00:00",
+        "liked": null,
+        "commented": null,
+        "connection_sent": null,
+        "connected": null,
+        "dm_sent": null,
+        "dm_followup1_sent": null,
+        "dm_followup2_sent": null,
+        "replied": null
+      },
+      "notes": [],
+      "author_headline": "Skip to search"
+    },
+    {
+      "post_url": "https://www.linkedin.com/posts/xavier-jackson-1925b957_10-cheap-franchises-you-can-start-today-share-7470980535016722432-m3gu/",
+      "author_name": "Xavier Jackson",
+      "author_profile_url": "https://www.linkedin.com/in/xavier-jackson-1925b957",
+      "post_snippet": "10 Cheap Franchises You Can Start Today by James Miller\n\nIf you want to start your own business without a hefty investment, consider cheap franchises. With options like Five Star Painting and SiteSwan, you can launch a franchise for under $50,000, or even less than $1,000 in some cases. These franch",
+      "stage": "disqualified",
+      "icp_score": 35,
+      "icp_data": {
+        "location": "United States",
+        "niche": null,
+        "role": null,
+        "size_signal": "unknown",
+        "pain_signal": null,
+        "skip_reason": "score 35 < 55",
+        "score": 35,
+        "qualified": false
+      },
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:49:08.446106+00:00",
+        "icp_scored": "2026-06-12T02:06:55.531885+00:00",
+        "liked": null,
+        "commented": null,
+        "connection_sent": null,
+        "connected": null,
+        "dm_sent": null,
+        "dm_followup1_sent": null,
+        "dm_followup2_sent": null,
+        "replied": null
+      },
+      "notes": [],
+      "author_headline": "Skip to search"
+    },
+    {
+      "post_url": "https://www.linkedin.com/posts/marquarious-collier-ba3974260_onefivesolutions-floorcare-commercialcleaning-ugcPost-7470976919514263552-7vph/",
+      "author_name": "Marquarious Collier",
+      "author_profile_url": "https://www.linkedin.com/in/marquarious-collier-ba3974260",
+      "post_snippet": "✨ Another Floor Brought Back to Life ✨\n\nNothing beats the look of a freshly cleaned and polished floor. Our team worked hard to restore the shine and leave this space looking its absolute best.\n\nWe want to extend a sincere thank you to Southwest Tennessee Adult Education for trusting OneFive Solutio",
+      "stage": "commented",
+      "icp_score": 60,
+      "icp_data": {
+        "location": "Jackson, Tennessee, United States",
+        "niche": "clean",
+        "role": null,
+        "size_signal": "unknown",
+        "pain_signal": null,
+        "skip_reason": null,
+        "score": 60,
+        "qualified": true
+      },
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:49:08.446106+00:00",
+        "icp_scored": "2026-06-12T02:07:02.913968+00:00",
+        "liked": "2026-06-12T02:24:53.436748+00:00",
+        "commented": "2026-06-12T02:25:05.370353+00:00",
+        "connection_sent": "2026-06-12T02:25:15.277975+00:00",
+        "connected": null,
+        "dm_sent": null,
+        "dm_followup1_sent": null,
+        "dm_followup2_sent": null,
+        "replied": null,
+        "connection_checked": "2026-06-12T02:18:35.147262+00:00"
+      },
+      "notes": [
+        "2026-06-12T02:31:38.224676+00:00: connection_sent reverted — request did not go through; request previously withdrawn — cooldown applies"
+      ],
+      "author_headline": "Skip to search",
+      "connect_cooldown": true
+    },
+    {
+      "post_url": "https://www.linkedin.com/posts/longislandlaundry_longislandlaundry-osha-glencove-share-7470969466571366401--hzc/",
+      "author_name": "Anthony Perfetti",
+      "author_profile_url": "https://www.linkedin.com/in/longislandlaundry",
+      "post_snippet": "🏥 Do Laundry Services Meet OSHA Sanitization Standards? Here's What Commercial Clients Need to Know in 2026.\n\nIf your business outsources its laundry — or is considering it — this is the most important question you can ask.\n\n🔬 What OSHA Actually Requires for Commercial Laundry:\n\nThe Occupational Saf",
+      "stage": "disqualified",
+      "icp_score": 35,
+      "icp_data": {
+        "location": "Glen Cove, New York, United States",
+        "niche": null,
+        "role": null,
+        "size_signal": "unknown",
+        "pain_signal": null,
+        "skip_reason": "score 35 < 55",
+        "score": 35,
+        "qualified": false
+      },
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:49:08.446106+00:00",
+        "icp_scored": "2026-06-12T02:07:10.076672+00:00",
+        "liked": null,
+        "commented": null,
+        "connection_sent": null,
+        "connected": null,
+        "dm_sent": null,
+        "dm_followup1_sent": null,
+        "dm_followup2_sent": null,
+        "replied": null
+      },
+      "notes": [],
+      "author_headline": "Skip to search"
+    },
+    {
+      "post_url": "https://www.linkedin.com/posts/bobby-kingan-1ab374135_commercialcleaning-residentialcleaning-propertymaintenance-share-7470933686893527040-m9cI/",
+      "author_name": "Bobby Kingan",
+      "author_profile_url": "https://www.linkedin.com/in/bobby-kingan-1ab374135",
+      "post_snippet": "Kingan Klean LLC 👑 can help you with all your commercial & residential exterior cleaning and painting needs!\n\n📱 410-830-9758\n📱 240-937-0195\n⚒️ MHIC# 161830\n🌐 www.kinganklean.com\n\n#commercialcleaning #ResidentialCleaning #propertymaintenance #smallbusiness\n… more",
+      "stage": "connection_sent",
+      "icp_score": 60,
+      "icp_data": {
+        "location": "Westminster, Maryland, United States",
+        "niche": "clean",
+        "role": null,
+        "size_signal": "unknown",
+        "pain_signal": null,
+        "skip_reason": null,
+        "score": 60,
+        "qualified": true
+      },
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:49:08.446106+00:00",
+        "icp_scored": "2026-06-12T02:07:17.406342+00:00",
+        "liked": "2026-06-12T02:25:24.520987+00:00",
+        "commented": "2026-06-12T02:25:36.204376+00:00",
+        "connection_sent": "2026-06-12T02:57:52.171178+00:00",
+        "connected": "2026-06-12T13:53:58.103638+00:00",
+        "dm_followup1_sent": null,
+        "dm_followup2_sent": null,
+        "connection_checked": "2026-06-12T02:18:40.024799+00:00"
+      },
+      "notes": [
+        "2026-06-12T02:56:57.558595+00:00: reverted from already_connected — Sales Nav Message button is InMail, not 1st degree",
+        "2026-06-12T16:58:46.121708+00:00: reverted dm_sent -> connection_sent; InMail sent in error, still 3rd degree"
+      ],
+      "author_headline": "Owner, Kingan Klean LLC"
+    },
+    {
+      "post_url": "https://www.linkedin.com/posts/yuri-yarmolchik-481206414_a-fresh-coat-of-paint-does-more-than-change-share-7470928550145998848-ATh-/",
+      "author_name": "Yuri Yarmolchik",
+      "author_profile_url": "https://www.linkedin.com/in/yuri-yarmolchik-481206414",
+      "post_snippet": "🎨 A fresh coat of paint does more than change a color. It protects your investment.\nMany homeowners think painting is only about appearance, but quality exterior paint helps protect your home from Florida's sun, humidity, and rain.\nAt Purple Painting & Services LLC, we focus on:\n ✔ Residential Paint",
+      "stage": "disqualified",
+      "icp_score": 35,
+      "icp_data": {
+        "location": "New Port Richey, Florida, United States",
+        "niche": null,
+        "role": null,
+        "size_signal": "unknown",
+        "pain_signal": null,
+        "skip_reason": "score 35 < 55",
+        "score": 35,
+        "qualified": false
+      },
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:49:08.446106+00:00",
+        "icp_scored": "2026-06-12T02:07:24.334992+00:00",
+        "liked": null,
+        "commented": null,
+        "connection_sent": null,
+        "connected": null,
+        "dm_sent": null,
+        "dm_followup1_sent": null,
+        "dm_followup2_sent": null,
+        "replied": null
+      },
+      "notes": [],
+      "author_headline": "Skip to search"
+    },
+    {
+      "post_url": "https://www.linkedin.com/posts/namah-pest-management-106712411_birdnetting-birdproofing-facilitymanagement-share-7470911733130227712-q-dp/",
+      "author_name": "Namah Pest management",
+      "author_profile_url": "https://www.linkedin.com/in/namah-pest-management-106712411",
+      "post_snippet": "Birds Don’t Damage Buildings Overnight. They Do It Every Day.\n\nMost residential societies, commercial properties, and industrial facilities focus heavily on security, maintenance, and aesthetics. Yet one risk is often underestimated until it becomes expensive: bird infestation.\n\nBirds may appear har",
+      "stage": "disqualified",
+      "icp_score": 0,
+      "icp_data": {
+        "location": "",
+        "niche": null,
+        "role": null,
+        "size_signal": "unknown",
+        "pain_signal": null,
+        "skip_reason": "outside US/Canada: no location",
+        "score": 0,
+        "qualified": false
+      },
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:49:08.446106+00:00",
+        "icp_scored": "2026-06-12T02:07:31.118890+00:00",
+        "liked": null,
+        "commented": null,
+        "connection_sent": null,
+        "connected": null,
+        "dm_sent": null,
+        "dm_followup1_sent": null,
+        "dm_followup2_sent": null,
+        "replied": null
+      },
+      "notes": [],
+      "author_headline": "Skip to search"
+    },
+    {
+      "post_url": "https://www.linkedin.com/posts/markus-oliveira-15944122b_home-share-7470910157921792000-efpI/",
+      "author_name": "Markus Oliveira",
+      "author_profile_url": "https://www.linkedin.com/in/markus-oliveira-15944122b",
+      "post_snippet": "Most businesses do not need another cleaning company.\n\nThey need a cleaning partner who actually understands what is at stake.\n\nYour office, medical space, showroom, dealership, bank, or commercial property is often the first impression people get of your business. Before they speak to your team, be",
+      "stage": "disqualified",
+      "icp_score": 60,
+      "icp_data": {
+        "location": "Taunton, Massachusetts, United States",
+        "niche": "clean",
+        "role": null,
+        "size_signal": "unknown",
+        "pain_signal": null,
+        "skip_reason": null,
+        "score": 60,
+        "qualified": true
+      },
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:49:08.446106+00:00",
+        "icp_scored": "2026-06-12T02:07:39.197937+00:00",
+        "liked": "2026-06-12T02:25:49.639760+00:00",
+        "commented": "2026-06-12T02:26:01.344536+00:00",
+        "connection_sent": "2026-06-12T03:02:31.769302+00:00",
+        "connected": "2026-06-12T13:53:58.103680+00:00",
+        "dm_followup1_sent": null,
+        "dm_followup2_sent": null,
+        "connection_checked": "2026-06-12T02:18:45.100311+00:00"
+      },
+      "notes": [
+        "2026-06-12T02:31:38.224692+00:00: connection_sent reverted — request did not go through",
+        "2026-06-12T02:56:57.558634+00:00: reverted from already_connected — Sales Nav Message button is InMail, not 1st degree",
+        "2026-06-12T16:58:46.121708+00:00: disqualified — replied 'Nah I'm good. Thank you though.'"
+      ],
+      "author_headline": "Author | Entrepreneur | Warehouse Operations"
+    },
+    {
+      "post_url": "https://www.linkedin.com/posts/abhishek-nirakhe-34498060_lemon-a-wonder-of-nature-a-global-opportunity-share-7470904773286825984-c2hG/",
+      "author_name": "Abhishek Nirakhe",
+      "author_profile_url": "https://www.linkedin.com/in/abhishek-nirakhe-34498060",
+      "post_snippet": "Lemon: A Wonder of Nature, A Global Opportunity\nLemon is not just a fruit. It is a complete bio-resource.\n\nAcross India, lemons and lime varieties are cultivated in different regions, each carrying its own commercial value — Kagzi Lime, Assam Lemon, Galgal / Hill Lemon, Rangpur Lime, Sweet Lime / Mo",
+      "stage": "disqualified",
+      "icp_score": 0,
+      "icp_data": {
+        "location": "",
+        "niche": null,
+        "role": null,
+        "size_signal": "unknown",
+        "pain_signal": null,
+        "skip_reason": "outside US/Canada: no location",
+        "score": 0,
+        "qualified": false
+      },
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:49:08.446106+00:00",
+        "icp_scored": "2026-06-12T02:07:46.026058+00:00",
+        "liked": null,
+        "commented": null,
+        "connection_sent": null,
+        "connected": null,
+        "dm_sent": null,
+        "dm_followup1_sent": null,
+        "dm_followup2_sent": null,
+        "replied": null
+      },
+      "notes": [],
+      "author_headline": "Skip to search"
+    },
+    {
+      "post_url": "https://www.linkedin.com/posts/angie-gordon_ive-been-pretty-quiet-on-linkedin-for-the-share-7470903872124018688-yjI9/",
+      "author_name": "Angie Gordon",
+      "author_profile_url": "https://www.linkedin.com/in/angie-gordon",
+      "post_snippet": "I've been pretty quiet on LinkedIn for the past few years, but I'm excited to share what I've been up to and a little about my new chapter.\n\nA while back I transitioned from commercial insurance into accounting. After spending several years working across multiple roles (including account manager, a",
+      "stage": "disqualified",
+      "icp_score": 0,
+      "icp_data": {
+        "location": "",
+        "niche": null,
+        "role": null,
+        "size_signal": "unknown",
+        "pain_signal": null,
+        "skip_reason": "outside US/Canada: no location",
+        "score": 0,
+        "qualified": false
+      },
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:49:08.446106+00:00",
+        "icp_scored": "2026-06-12T02:07:52.921615+00:00",
+        "liked": null,
+        "commented": null,
+        "connection_sent": null,
+        "connected": null,
+        "dm_sent": null,
+        "dm_followup1_sent": null,
+        "dm_followup2_sent": null,
+        "replied": null
+      },
+      "notes": [],
+      "author_headline": "Skip to search"
+    },
+    {
+      "post_url": "https://www.linkedin.com/posts/matthew-thoms-662a6025a_today-we-were-tasked-with-cleaning-the-front-ugcPost-7470901663621390336-lnOt/",
+      "author_name": "Matthew Thoms",
+      "author_profile_url": "https://www.linkedin.com/in/matthew-thoms-662a6025a",
+      "post_snippet": "Today we were tasked with cleaning the front entrance and slabbed areas at the Courtyard by Marriott Edinburgh.\n\nThe project came with a few challenges due to the busy nature of the site, including vehicle movements and limited access to water. However, with some planning and flexibility, we were ab",
+      "stage": "disqualified",
+      "icp_score": 0,
+      "icp_data": {
+        "location": "",
+        "niche": null,
+        "role": null,
+        "size_signal": "unknown",
+        "pain_signal": null,
+        "skip_reason": "outside US/Canada: no location",
+        "score": 0,
+        "qualified": false
+      },
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:49:08.446106+00:00",
+        "icp_scored": "2026-06-12T02:07:59.802008+00:00",
+        "liked": null,
+        "commented": null,
+        "connection_sent": null,
+        "connected": null,
+        "dm_sent": null,
+        "dm_followup1_sent": null,
+        "dm_followup2_sent": null,
+        "replied": null
+      },
+      "notes": [],
+      "author_headline": "Skip to search"
+    },
+    {
+      "post_url": "https://www.linkedin.com/posts/bouchernicolas_top-finance-book-every-cfo-should-know-ugcPost-7470849190714040320-mX6U/",
+      "author_name": "Nicolas Boucher",
+      "author_profile_url": "https://www.linkedin.com/in/bouchernicolas",
+      "post_snippet": "You can spend 3 years reading finance books.\nOr you can read these 10, apply AI, and move 3 years ahead.\nHere's what makes you better than 99% of finance pros in 2026:\nhttps://lnkd.in/dDwM45Yj\n\nIf you want to be better than 99% of finance pros in 2026, come on Tuesday (link above) for a live masterc",
+      "stage": "disqualified",
+      "icp_score": 0,
+      "icp_data": {
+        "location": "",
+        "niche": null,
+        "role": null,
+        "size_signal": "unknown",
+        "pain_signal": null,
+        "skip_reason": "outside US/Canada: no location",
+        "score": 0,
+        "qualified": false
+      },
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:49:08.446106+00:00",
+        "icp_scored": "2026-06-12T02:08:07.093978+00:00",
+        "liked": null,
+        "commented": null,
+        "connection_sent": null,
+        "connected": null,
+        "dm_sent": null,
+        "dm_followup1_sent": null,
+        "dm_followup2_sent": null,
+        "replied": null
+      },
+      "notes": [],
+      "author_headline": "Skip to search"
+    },
+    {
+      "post_url": "https://www.linkedin.com/posts/alexander-garcia-71b0a517a_the-most-successful-businesses-understand-share-7470894905083465728-HRMW/",
+      "author_name": "Alexander Garcia",
+      "author_profile_url": "https://www.linkedin.com/in/alexander-garcia-71b0a517a",
+      "post_snippet": "The most successful businesses understand a simple truth: people notice the details.\nBefore a contract is signed, before a customer makes a purchase, before a tenant decides to stay, they form an opinion based on what they see.\nCleanliness is not a cost. It's a reflection of standards.\nPlatinum Shin",
+      "stage": "replied",
+      "icp_score": 60,
+      "icp_data": {
+        "location": "Fort Lupton, Colorado, United States",
+        "niche": "clean",
+        "role": null,
+        "size_signal": "unknown",
+        "pain_signal": null,
+        "skip_reason": null,
+        "score": 60,
+        "qualified": true
+      },
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:49:08.446106+00:00",
+        "icp_scored": "2026-06-12T02:08:13.972175+00:00",
+        "liked": "2026-06-12T02:26:20.138025+00:00",
+        "commented": "2026-06-12T02:26:31.052094+00:00",
+        "connection_sent": "2026-06-12T02:58:22.229443+00:00",
+        "connected": "2026-06-12T03:04:12.124329+00:00",
+        "dm_sent": "2026-06-12T03:12:12.878742+00:00",
+        "dm_followup1_sent": null,
+        "dm_followup2_sent": null,
+        "replied": "2026-06-12T13:58:32.344789+00:00",
+        "connection_checked": "2026-06-12T02:18:49.741639+00:00"
+      },
+      "notes": [
+        "2026-06-12T02:56:57.558650+00:00: reverted from already_connected — Sales Nav Message button is InMail, not 1st degree"
+      ],
+      "author_headline": "Founder - Platinum Shine Co. | Director of Operations & Client Relations - D and I Remodeling"
+    },
+    {
+      "post_url": "https://www.linkedin.com/posts/mark-milburn-49174b145_franchisepr-franchisepressreleases-franchiseelife-ugcPost-7470894662631854082-af0Q/",
+      "author_name": "Mark Milburn",
+      "author_profile_url": "https://www.linkedin.com/in/mark-milburn-49174b145",
+      "post_snippet": "Premium Service Brands just made a smart move — and prospective franchisees in the home services space should take notice.\nPSB, one of North America's leading home services franchisors, has acquired Wise Coatings Franchises, a fast-growing residential and commercial floor coatings brand with approxi",
+      "stage": "disqualified",
+      "icp_score": 35,
+      "icp_data": {
+        "location": "Port Orange, Florida, United States",
+        "niche": null,
+        "role": null,
+        "size_signal": "unknown",
+        "pain_signal": null,
+        "skip_reason": "score 35 < 55",
+        "score": 35,
+        "qualified": false
+      },
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:49:08.446106+00:00",
+        "icp_scored": "2026-06-12T02:08:22.148614+00:00",
+        "liked": null,
+        "commented": null,
+        "connection_sent": null,
+        "connected": null,
+        "dm_sent": null,
+        "dm_followup1_sent": null,
+        "dm_followup2_sent": null,
+        "replied": null
+      },
+      "notes": [],
+      "author_headline": "Skip to search"
+    },
+    {
+      "post_url": "https://www.linkedin.com/posts/formula850_6-ways-people-use-credit-to-make-money-share-7470891161621086208-hfrc/",
+      "author_name": "Roy Moreira",
+      "author_profile_url": "https://www.linkedin.com/in/formula850",
+      "post_snippet": "6 Ways People Use Credit to Make Money\n• Box Truck Business\nAverage: $3,000–$15,000+ per month\n• Car Rental Business\nAverage: $500–$1,500+ per vehicle per month\n• Chauffeur Service\nAverage: $3,000–$10,000+ per month\n• Commercial Cleaning Company\nAverage: $2,000–$20,000+ per month\n• ATM Machines\nAver",
+      "stage": "disqualified",
+      "icp_score": 60,
+      "icp_data": {
+        "location": "West Orange, New Jersey, United States",
+        "niche": "clean",
+        "role": null,
+        "size_signal": "unknown",
+        "pain_signal": null,
+        "skip_reason": null,
+        "score": 60,
+        "qualified": true
+      },
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:49:08.446106+00:00",
+        "icp_scored": "2026-06-12T02:08:29.377528+00:00",
+        "liked": null,
+        "commented": null,
+        "connection_sent": null,
+        "connected": null,
+        "dm_sent": null,
+        "dm_followup1_sent": null,
+        "dm_followup2_sent": null,
+        "replied": null,
+        "disqualified": "2026-06-12T02:18:02.877853+00:00"
+      },
+      "notes": [
+        "2026-06-12T02:18:02.877871+00:00: disqualified — off-topic post (credit/box trucks, not cleaning)"
+      ],
+      "author_headline": "Skip to search"
+    },
+    {
+      "post_url": "https://www.linkedin.com/posts/francis-x-williams_%F0%9D%97%A7%F0%9D%97%B5%F0%9D%97%B2-%F0%9D%97%96%F0%9D%97%B9%F0%9D%97%B2%F0%9D%97%AE%F0%9D%97%BB%F0%9D%97%B6%F0%9D%97%BB%F0%9D%97%B4-%F0%9D%97%95%F0%9D%98%82%F0%9D%98%80%F0%9D%97%B6%F0%9D%97%BB%F0%9D%97%B2%F0%9D%98%80%F0%9D%98%80-share-7469717913902645248-Ankp/",
+      "author_name": "Francis Williams CPC, ELI-MP",
+      "author_profile_url": "https://www.linkedin.com/in/francis-x-williams",
+      "post_snippet": "𝗧𝗵𝗲 𝗖𝗹𝗲𝗮𝗻𝗶𝗻𝗴 𝗕𝘂𝘀𝗶𝗻𝗲𝘀𝘀 𝗠𝗶𝘀𝗲𝗿𝘆: 𝗬𝗼𝘂 𝗔𝗿𝗲 𝗧𝗮𝗸𝗶𝗻𝗴 𝗔𝗱𝘃𝗶𝗰𝗲 𝗙𝗿𝗼𝗺 𝗧𝗵𝗲 𝗪𝗿𝗼𝗻𝗴 𝗣𝗲𝗼𝗽𝗹𝗲\n\nLook at the online groups, local associations, or business friends you talk to about your cleaning company. Are they constantly complaining about low-ball competitors, unreliable cleaners, and demanding clients?\n\nIf your circ",
+      "stage": "disqualified",
+      "icp_score": 0,
+      "icp_data": {
+        "location": "",
+        "niche": null,
+        "role": null,
+        "size_signal": "unknown",
+        "pain_signal": null,
+        "skip_reason": "outside US/Canada: no location",
+        "score": 0,
+        "qualified": false
+      },
+      "comment_text": null,
+      "comment_style": null,
+      "dm_text": null,
+      "timestamps": {
+        "found": "2026-06-12T01:49:08.446106+00:00",
+        "icp_scored": "2026-06-12T02:08:36.450792+00:00",
+        "liked": null,
+        "commented": null,
+        "connection_sent": null,
+        "connected": null,
+        "dm_sent": null,
+        "dm_followup1_sent": null,
+        "dm_followup2_sent": null,
+        "replied": null
+      },
+      "notes": [],
+      "author_headline": "Skip to search"
+    }
+  ],
+  "_synced_at": "2026-06-12T17:11:40.877466+00:00"
+}
