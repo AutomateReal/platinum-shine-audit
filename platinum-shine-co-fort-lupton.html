@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Visibility Audit — Platinum Shine Co. LLC | Local Biz Boost</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #f4f4f6;
+    color: #1a1a1a;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .header {
+    background: #1a1a2e;
+    color: #fff;
+    padding: 28px 20px 24px;
+    text-align: center;
+  }
+  .header .brand { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: #666; margin-bottom: 8px; }
+  .header h1 { font-size: 22px; font-weight: 800; line-height: 1.25; }
+  .header .sub { font-size: 13px; color: #888; margin-top: 6px; }
+
+  .score-row {
+    display: flex;
+    background: #fff;
+    margin: 14px 14px 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,.07);
+  }
+  .score-col {
+    flex: 1;
+    text-align: center;
+    padding: 16px 8px;
+    border-right: 1px solid #f0f0f0;
+  }
+  .score-col:last-child { border-right: none; }
+  .score-col .lbl { font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: #999; margin-bottom: 4px; }
+  .score-col .val { font-size: 26px; font-weight: 800; line-height: 1; }
+  .score-col .val.red { color: #e53e3e; }
+  .score-col .val.amber { color: #dd6b20; }
+  .score-col .val.green { color: #276749; }
+  .score-col .sub-val { font-size: 11px; color: #888; margin-top: 3px; }
+
+  .section {
+    background: #fff;
+    margin: 14px 14px 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,.07);
+  }
+  .section:last-of-type { margin-bottom: 14px; }
+  .sh {
+    padding: 12px 16px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+  }
+  .sh.red { background: #c53030; }
+  .sh.orange { background: #c05621; }
+  .sh.blue { background: #2b6cb0; }
+  .sh.dark { background: #2d3748; }
+  .sb { padding: 14px 16px; }
+
+  .finding { padding: 11px 0; border-bottom: 1px solid #f2f2f2; }
+  .finding:last-child { border-bottom: none; }
+  .ft {
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 4px;
+  }
+  .badge {
+    display: inline-block;
+    padding: 2px 7px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: .5px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .bc { background: #fed7d7; color: #c53030; }
+  .bh { background: #feebc8; color: #c05621; }
+  .bm { background: #fefcbf; color: #975a16; }
+  .bw { background: #c6f6d5; color: #276749; }
+
+  .fd { font-size: 13px; color: #555; line-height: 1.6; }
+  .highlight { background: #fff5f5; border-left: 3px solid #e53e3e; padding: 10px 12px; border-radius: 0 6px 6px 0; margin-top: 8px; font-size: 13px; }
+  .insight { background: #ebf8ff; border-left: 3px solid #3182ce; padding: 10px 12px; border-radius: 0 6px 6px 0; margin-top: 8px; font-size: 13px; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 12px; margin-top: 10px; }
+  th { background: #f7fafc; padding: 7px 8px; text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: .5px; color: #666; border-bottom: 2px solid #e2e8f0; }
+  td { padding: 9px 8px; border-bottom: 1px solid #f0f0f0; vertical-align: top; color: #333; }
+  tr:last-child td { border-bottom: none; }
+  .you td { background: #fff5f5; color: #c53030; font-style: italic; font-weight: 600; }
+  .top1 td { background: #f0fff4; }
+  .stars { color: #f6ad55; }
+
+  .kw-row { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid #f2f2f2; font-size: 13px; }
+  .kw-row:last-child { border-bottom: none; }
+  .kw { color: #333; font-weight: 500; }
+  .rank-miss { color: #c53030; font-weight: 700; font-size: 12px; }
+  .rank-top { color: #276749; font-size: 12px; }
+
+  .roadmap { background: #1a1a2e; margin: 14px; border-radius: 12px; padding: 18px 16px; }
+  .roadmap h2 { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #90cdf4; margin-bottom: 14px; }
+  .step { display: flex; gap: 12px; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,.08); }
+  .step:last-child { border-bottom: none; }
+  .num {
+    width: 26px; height: 26px; border-radius: 50%;
+    font-weight: 800; font-size: 12px;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0; margin-top: 1px;
+    color: #fff;
+  }
+  .num.r { background: #e53e3e; }
+  .num.o { background: #dd6b20; }
+  .num.y { background: #d69e2e; }
+  .num.g { background: #38a169; }
+  .step-text { font-size: 13px; color: #e2e8f0; line-height: 1.55; }
+  .step-text strong { color: #fff; }
+
+  .cta { background: #2d3748; margin: 0 14px 14px; border-radius: 12px; padding: 22px 16px; text-align: center; }
+  .cta h2 { font-size: 18px; font-weight: 800; color: #fff; margin-bottom: 8px; }
+  .cta p { font-size: 13px; color: #a0aec0; margin-bottom: 16px; line-height: 1.6; }
+  .btn { display: block; padding: 13px 20px; border-radius: 8px; font-weight: 700; font-size: 14px; text-decoration: none; margin-bottom: 8px; }
+  .btn-primary { background: #e53e3e; color: #fff; }
+  .btn-secondary { background: transparent; border: 2px solid #4a5568; color: #a0aec0; font-size: 13px; }
+
+  .footer { text-align: center; padding: 12px 14px 20px; font-size: 11px; color: #aaa; }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="brand">Local Biz Boost — Visibility Audit</div>
+  <h1>Platinum Shine Co. LLC<br>Fort Lupton, CO</h1>
+  <div class="sub">Prepared for Alexander Garcia &nbsp;·&nbsp; June 2026</div>
+</div>
+
+<!-- SCORE ROW -->
+<div class="score-row">
+  <div class="score-col">
+    <div class="lbl">Visibility Score</div>
+    <div class="val red">3<span style="font-size:16px;color:#ccc">/10</span></div>
+    <div class="sub-val">Not ranking</div>
+  </div>
+  <div class="score-col">
+    <div class="lbl">Google Reviews</div>
+    <div class="val red">0</div>
+    <div class="sub-val">No rating</div>
+  </div>
+  <div class="score-col">
+    <div class="lbl">GBP Photos</div>
+    <div class="val amber">4</div>
+    <div class="sub-val">Need 10+</div>
+  </div>
+  <div class="score-col">
+    <div class="lbl">GBP Posts</div>
+    <div class="val red">0</div>
+    <div class="sub-val">Last 30 days</div>
+  </div>
+</div>
+
+<!-- CRITICAL -->
+<div class="section">
+  <div class="sh red">🚨 Critical — These Are Blocking Your Rankings</div>
+  <div class="sb">
+
+    <div class="finding">
+      <div class="ft"><span class="badge bc">CRITICAL</span>Zero Google reviews — your #1 ranking problem</div>
+      <div class="fd">
+        Google uses review count, rating, and recency as direct ranking signals in the local pack. You have 0 reviews and no star rating. Every competitor showing up above you has reviews.
+        <div class="highlight">
+          The top-ranked local cleaning business in Fort Lupton (Vesta Plus) has just 11 reviews. Getting 15 verified Google reviews puts you in position to outrank them. That's within reach quickly.
+        </div>
+      </div>
+    </div>
+
+    <div class="finding">
+      <div class="ft"><span class="badge bc">CRITICAL</span>Google Business Profile is inactive — 0 posts in 30 days</div>
+      <div class="fd">
+        Google treats posting activity as an engagement signal. Businesses that post weekly get ranked ahead of those that don't — even with similar review counts. Your profile hasn't posted in over 30 days. Vesta Plus (Fort Lupton #1) and your other competitors are active.
+      </div>
+    </div>
+
+    <div class="finding">
+      <div class="ft"><span class="badge bc">CRITICAL</span>No schema markup on platinumshinecolorado.com</div>
+      <div class="fd">
+        Your website has zero structured data. Schema is the machine-readable code that tells Google exactly what your business is, where it operates, and what services it offers. Without it, Google has to guess. Competitors with proper LocalBusiness schema get priority in local search results.
+        <div class="highlight">
+          Your site scores 93/100 on basic SEO — the content and metadata are solid. Schema markup is the missing layer.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- WHO'S RANKING -->
+<div class="section">
+  <div class="sh orange">📊 Who's Getting the Calls Instead of You</div>
+  <div class="sb">
+    <div class="fd" style="margin-bottom:10px">Three searches your customers run right now — and who shows up.</div>
+
+    <div style="font-size:12px;font-weight:700;color:#555;text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px">"commercial cleaning Fort Lupton CO"</div>
+    <table>
+      <thead><tr><th>#</th><th>Business</th><th>Rating</th><th>Reviews</th></tr></thead>
+      <tbody>
+        <tr class="top1"><td>1</td><td>Commercial Cleaning CO LLC</td><td><span class="stars">★★★★★</span> 5.0</td><td>31</td></tr>
+        <tr><td>2</td><td>K.O. Commercial Cleaning</td><td><span class="stars">★★★★★</span> 5.0</td><td>15</td></tr>
+        <tr><td>3</td><td>ACT Cleaners</td><td><span class="stars">★★★★★</span> 5.0</td><td>3</td></tr>
+        <tr class="you"><td>—</td><td>Platinum Shine Co. LLC</td><td>No rating</td><td>0</td></tr>
+      </tbody>
+    </table>
+
+    <div style="font-size:12px;font-weight:700;color:#555;text-transform:uppercase;letter-spacing:.5px;margin:14px 0 6px">"janitorial service near me" (Fort Lupton)</div>
+    <table>
+      <thead><tr><th>#</th><th>Business</th><th>Rating</th><th>Reviews</th></tr></thead>
+      <tbody>
+        <tr class="top1"><td>1</td><td>Vesta Plus cleaning services <span style="font-size:10px;color:#276749">(Fort Lupton)</span></td><td><span class="stars">★★★★★</span> 4.9</td><td>11</td></tr>
+        <tr><td>2</td><td>Valery Cleaning Pro</td><td><span class="stars">★★★★★</span> 5.0</td><td>1</td></tr>
+        <tr><td>3</td><td>Shining Solutions LLC</td><td><span class="stars">★★★★★</span> 5.0</td><td>8</td></tr>
+        <tr class="you"><td>—</td><td>Platinum Shine Co. LLC</td><td>No rating</td><td>0</td></tr>
+      </tbody>
+    </table>
+
+    <div class="insight" style="margin-top:12px">
+      <strong>The opportunity is real.</strong> The #1 business in your own backyard has only 11 reviews. You have a verified GBP and a professional website. Reviews are the one thing standing between you and that top spot.
+    </div>
+  </div>
+</div>
+
+<!-- HIGH IMPACT -->
+<div class="section">
+  <div class="sh orange">⚡ High-Impact Gaps</div>
+  <div class="sb">
+
+    <div class="finding">
+      <div class="ft"><span class="badge bh">HIGH</span>Only 4 photos — competitors average 15–25</div>
+      <div class="fd">GBP listings with 10+ photos get 35% more website clicks and 42% more direction requests. You need before/after cleaning shots, facility photos, and team photos at minimum.</div>
+    </div>
+
+    <div class="finding">
+      <div class="ft"><span class="badge bh">HIGH</span>No GBP attributes set</div>
+      <div class="fd">Attributes tell customers (and Google) key trust signals — things like "Women-led," "Family-owned," "Insured," "Background-checked staff." Your profile has zero attributes set. Your description mentions family-owned and insured — these aren't surfaced anywhere Google can use them.</div>
+    </div>
+
+    <div class="finding">
+      <div class="ft"><span class="badge bh">HIGH</span>Website loads in 5.4 seconds</div>
+      <div class="fd">Google's threshold for "slow" is 3 seconds. Your site takes 5.4s to load — that's borderline failing Core Web Vitals. A slow site costs you both Google rankings and conversions. Customers who wait that long usually leave before the page finishes.</div>
+    </div>
+
+    <div class="finding">
+      <div class="ft"><span class="badge bh">HIGH</span>Only 2 GBP categories</div>
+      <div class="fd">You're listed as "Janitorial Service" and "Establishment Service." Competitors targeting office cleaning, commercial cleaning, and floor care have 4–6 categories set. Each additional relevant category expands the searches you can appear for.</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- WHAT YOU HAVE WORKING -->
+<div class="section">
+  <div class="sh blue">✅ What's Already Working</div>
+  <div class="sb">
+
+    <div class="finding">
+      <div class="ft"><span class="badge bw">GOOD</span>GBP is claimed and verified</div>
+      <div class="fd">You have a live Google Business Profile. This is the foundation. Many competitors in smaller markets aren't even this far.</div>
+    </div>
+
+    <div class="finding">
+      <div class="ft"><span class="badge bw">GOOD</span>Professional website with strong SEO foundation</div>
+      <div class="fd">platinumshinecolorado.com scores 93/100 on technical SEO. The title, meta description, and H1 are well-written and locally targeted. The page speed issue is fixable without a full rebuild.</div>
+    </div>
+
+    <div class="finding">
+      <div class="ft"><span class="badge bw">GOOD</span>Well-written business description</div>
+      <div class="fd">Your GBP description clearly states your service area (Northern Colorado + Greater Denver), specialization (commercial only), and service types. Most local cleaning businesses leave this blank or generic.</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ROADMAP -->
+<div class="roadmap">
+  <h2>30-Day Roadmap to the Local Pack</h2>
+
+  <div class="step">
+    <div class="num r">1</div>
+    <div class="step-text">
+      <strong>Week 1 — Get reviews flowing.</strong> Text your last 10 clients a direct Google review link. Five reviews moves you off zero. Ten reviews puts you in the pack. Fifteen puts you ahead of Vesta Plus, the current Fort Lupton leader. This is the highest-ROI action available.
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="num r">2</div>
+    <div class="step-text">
+      <strong>Week 1 — Start posting weekly.</strong> One Google Post per week with a job photo and a sentence about the work. It takes 5 minutes. Google rewards active profiles — your competitors are mostly inactive here, so you can stand out immediately.
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="num o">3</div>
+    <div class="step-text">
+      <strong>Week 2 — Add photos and attributes.</strong> Upload 10+ before/after photos from recent jobs. Set your attributes: Family-owned, Insured, Background-checked, Local business. These are quick profile edits in GBP Manager.
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="num o">4</div>
+    <div class="step-text">
+      <strong>Week 2 — Expand GBP categories.</strong> Add "Commercial Cleaning Service," "Office Cleaning Service," and "Floor Cleaning Service" as secondary categories. Each one opens a new set of searches your listing can appear for.
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="num y">5</div>
+    <div class="step-text">
+      <strong>Week 3 — Fix website speed and add schema.</strong> The 5.4s load time is your biggest website risk. Adding LocalBusiness schema takes 30 minutes and directly improves how Google reads and ranks your site. These are technical fixes with high payoff.
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="num g">6</div>
+    <div class="step-text">
+      <strong>Ongoing — Review automation.</strong> Set up a system that texts every client after a job asking for a Google review. Businesses that generate reviews consistently (even 2–3/month) sustain their rankings. One-time bursts fade.
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="cta">
+  <h2>Want Us to Handle This?</h2>
+  <p>
+    I can optimize your GBP, add schema to your site, set up automated review requests, and post weekly — all done for you. Most clients see ranking improvements in 30–45 days.
+  </p>
+  <a class="btn btn-primary" href="https://calendly.com/localbizboost/15min" target="_blank">
+    Book a 15-Minute Call
+  </a>
+  <a class="btn btn-secondary" href="https://calendly.com/localbizboost/15min" target="_blank">
+    See How the 14-Day Trial Works
+  </a>
+</div>
+
+<div class="footer">
+  Local Biz Boost &nbsp;·&nbsp; localbizboost.com<br>
+  Data pulled June 2026 via LocalSEOData — non-personalized Google search results &amp; GBP data.<br>
+  Rankings reflect the local pack for the stated keywords on the audit date.
+</div>
+
+</body>
+</html>
