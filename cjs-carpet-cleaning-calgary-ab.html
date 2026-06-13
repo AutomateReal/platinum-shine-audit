@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Visibility Audit — CJ's Carpet Cleaning Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #F8FAFC; color: #1E293B; line-height: 1.6; }
+    .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+    .header { background: #fff; border-bottom: 1px solid #E2E8F0; padding: 32px 0; }
+    .header-prepared { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #94A3B8; margin-bottom: 10px; }
+    .header-business { font-size: 30px; font-weight: 900; color: #0F172A; letter-spacing: -0.02em; margin-bottom: 4px; }
+    .header-sub { font-size: 15px; color: #64748B; }
+    .score-section { background: #fff; padding: 40px 0; border-bottom: 1px solid #E2E8F0; }
+    .score-inner { display: flex; align-items: flex-start; gap: 28px; }
+    .score-badge { flex-shrink: 0; width: 104px; height: 104px; border-radius: 50%; background: #EF4444; box-shadow: 0 0 0 6px #FEF2F2; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+    .score-num   { font-size: 38px; font-weight: 900; color: #fff; line-height: 1; }
+    .score-denom { font-size: 10px; font-weight: 600; color: rgba(255,255,255,0.75); letter-spacing: 0.06em; text-transform: uppercase; }
+    .score-copy h2 { font-size: 20px; font-weight: 800; color: #EF4444; margin-bottom: 10px; }
+    .score-copy p  { font-size: 15px; color: #475569; line-height: 1.75; }
+    .stats-bar { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 32px; }
+    .stat { background: #fff; border: 1px solid #E2E8F0; border-radius: 10px; padding: 18px 14px; text-align: center; }
+    .stat-val { font-size: 26px; font-weight: 900; color: #0F172A; line-height: 1.1; }
+    .stat-val.red    { color: #EF4444; }
+    .stat-val.green  { color: #16A34A; }
+    .stat-lbl { font-size: 10px; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase; color: #94A3B8; margin-top: 5px; }
+    .table-section { background: #fff; border-bottom: 1px solid #E2E8F0; padding: 40px 0; }
+    .eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #94A3B8; margin-bottom: 16px; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    thead th { background: #F1F5F9; padding: 10px 14px; text-align: left; font-size: 11px; font-weight: 700; text-transform: uppercase; color: #64748B; }
+    tbody td { padding: 14px 14px; color: #334155; }
+    tbody tr:not(:last-child) td { border-bottom: 1px solid #F1F5F9; }
+    .badge { display: inline-flex; align-items: center; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 700; }
+    .badge-absent   { background: #FEE2E2; color: #DC2626; }
+    .badge-3rd      { background: #FEF3C7; color: #92400E; }
+    .badge-1st      { background: #DCFCE7; color: #15803D; }
+    .badge-unclaimed { background: #F3E8FF; color: #7C3AED; }
+    .opp-banner { background: linear-gradient(135deg, #3B0764 0%, #1E1B4B 100%); border-radius: 10px; padding: 24px 28px; margin: 24px 0; display: flex; gap: 16px; align-items: flex-start; }
+    .opp-icon { font-size: 28px; flex-shrink: 0; }
+    .opp-text { color: #DDD6FE; font-size: 14px; line-height: 1.7; }
+    .opp-text strong { color: #fff; font-size: 15px; display: block; margin-bottom: 6px; }
+    .alert { border-radius: 8px; padding: 16px 18px; margin: 20px 0; display: flex; gap: 12px; align-items: flex-start; }
+    .alert-amber { background: #FFFBEB; border: 1px solid #FDE68A; }
+    .alert-green { background: #F0FDF4; border: 1px solid #BBF7D0; }
+    .alert-icon  { font-size: 17px; flex-shrink: 0; margin-top: 2px; }
+    .alert-body  { font-size: 14px; color: #374151; line-height: 1.65; }
+    .alert-body strong { color: #111827; }
+    .issues-section { padding: 40px 0; }
+    .issue { background: #fff; border: 1px solid #E2E8F0; border-left: 4px solid #EF4444; border-radius: 0 10px 10px 0; padding: 22px 24px; margin-bottom: 16px; }
+    .issue-title { font-size: 15px; font-weight: 700; color: #DC2626; margin-bottom: 10px; }
+    .issue-body  { font-size: 14px; color: #475569; line-height: 1.75; }
+    .cta-section { background: #0F172A; padding: 60px 0; text-align: center; }
+    .cta-h    { font-size: 28px; font-weight: 900; color: #fff; line-height: 1.25; margin-bottom: 18px; }
+    .cta-body { font-size: 15px; color: #94A3B8; line-height: 1.75; max-width: 500px; margin: 0 auto 36px; }
+    .cta-btn  { display: inline-block; background: #16A34A; color: #fff; font-size: 16px; font-weight: 700; padding: 18px 40px; border-radius: 8px; text-decoration: none; }
+    .footer { background: #0F172A; border-top: 1px solid #1E293B; padding: 22px 0; }
+    .footer-inner { display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: #475569; flex-wrap: wrap; gap: 8px; }
+    .footer a { color: #64748B; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <div class="container">
+    <div class="header-prepared">Prepared June 13, 2026</div>
+    <h1 class="header-business">CJ's Carpet Cleaning Services</h1>
+    <p class="header-sub">Local Visibility Audit — Calgary, Alberta</p>
+  </div>
+</div>
+
+<div class="score-section">
+  <div class="container">
+    <div class="score-inner">
+      <div class="score-badge">
+        <span class="score-num">8</span>
+        <span class="score-denom">out of 100</span>
+      </div>
+      <div class="score-copy">
+        <h2>Critical — The Work Is Real. Google Doesn't Know It.</h2>
+        <p>
+          CJ's Carpet Cleaning has no Google Business Profile, no website, and no reviews.
+          When someone in Calgary searches for pet stain removal or residential carpet cleaning today,
+          there is no path that leads to CJ's — not a listing, not a page, not a phone number.
+          The results are going to Dang Good (2,500+ reviews), Zerorez, and a dozen others
+          who built their Google presence before CJ's launched.
+          The service is real. The gap is entirely in visibility.
+        </p>
+      </div>
+    </div>
+
+    <div class="stats-bar">
+      <div class="stat">
+        <div class="stat-val red">0</div>
+        <div class="stat-lbl">Google Reviews</div>
+      </div>
+      <div class="stat">
+        <div class="stat-val red">None</div>
+        <div class="stat-lbl">Google Business Profile</div>
+      </div>
+      <div class="stat">
+        <div class="stat-val red">0</div>
+        <div class="stat-lbl">Website Pages Indexed</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="table-section">
+  <div class="container">
+    <div class="eyebrow">Google Search Visibility — Calgary, AB</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Search Term</th>
+          <th>CJ's Position</th>
+          <th>#1 Competitor</th>
+          <th>Their Reviews</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>carpet cleaning Calgary</td>
+          <td><span class="badge badge-absent">Not Ranking</span></td>
+          <td>Dang Good Carpet &amp; Furnace</td>
+          <td>2,500+ reviews</td>
+        </tr>
+        <tr>
+          <td>pet stain removal Calgary</td>
+          <td><span class="badge badge-absent">Not Ranking</span></td>
+          <td>Zerorez Calgary</td>
+          <td>500+ reviews</td>
+        </tr>
+        <tr>
+          <td>residential carpet cleaning Calgary</td>
+          <td><span class="badge badge-absent">Not Ranking</span></td>
+          <td>Cleaning In Action</td>
+          <td>100+ reviews</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="opp-banner">
+      <span class="opp-icon">🚀</span>
+      <div class="opp-text">
+        <strong>Pet stain removal is a targeted niche with a lower bar than the broad market.</strong>
+        The companies ranking for "pet stain removal Calgary" have 100–500 reviews — not 2,500.
+        A GBP optimized specifically for pet and odor removal, backed by before/after photos
+        (which CJ already has), can reach the top 3 for this keyword significantly faster
+        than competing on the broad "carpet cleaning" category from scratch.
+      </div>
+    </div>
+
+    <div class="alert alert-green">
+      <span class="alert-icon">✅</span>
+      <div class="alert-body">
+        <strong>The before/after photos already exist and they're strong.</strong>
+        The most recent post shows a full staircase, hallway, and bedroom transformation —
+        exactly the content that converts on a GBP listing and a website.
+        Most businesses at this stage have nothing visual to work with.
+        CJ's has 12 photos of real results ready to go the moment a profile is live.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="issues-section">
+  <div class="container">
+    <div class="eyebrow">4 Things Keeping CJ's Carpet Cleaning Off Google</div>
+
+    <div class="issue">
+      <div class="issue-title">⚠ No Google Business Profile — Not on the Map for Any Search</div>
+      <div class="issue-body">
+        Searching "587-434-0814" on Google returns nothing. Searching "CJ's Carpet Cleaning Calgary"
+        returns nothing. The business does not exist in Google's local index.
+        Every search for carpet cleaning or pet stain removal in Calgary right now routes
+        to a competitor. The GBP is the single highest-impact fix — it's how Google decides
+        which businesses show up in the map pack, and the map pack captures roughly 70% of clicks
+        on local service searches.
+      </div>
+    </div>
+
+    <div class="issue">
+      <div class="issue-title">⚠ No Website — Google Has Nothing to Rank or Trust</div>
+      <div class="issue-body">
+        There is no website indexed for CJ's Carpet Cleaning. The current booking link goes
+        to a JotForm — which Google cannot read, cannot rank, and cannot use to understand
+        what the business does or where it operates.
+        Without a website, there's no page to rank in organic results below the map pack,
+        no local schema telling Google the service area, and no landing page for anyone
+        who clicks through from an ad or a social post.
+        A one-page site with the right local signals would change all of this.
+      </div>
+    </div>
+
+    <div class="issue">
+      <div class="issue-title">⚠ Zero Reviews While Competitors Have Hundreds</div>
+      <div class="issue-body">
+        The businesses holding the top spots for pet stain removal and residential carpet cleaning
+        in Calgary have between 100 and 2,500 Google reviews. Review count is both a ranking
+        signal and the first thing a potential customer checks before calling.
+        CJ's Carpet Cleaning has the truck-mounted equipment and the results to earn strong reviews —
+        the system to collect them just isn't in place yet.
+        An automated SMS follow-up after every job typically generates 8–15 new reviews
+        in the first 30 days alone.
+      </div>
+    </div>
+
+    <div class="issue">
+      <div class="issue-title">⚠ No Local Signals Anywhere — Phone, Address, Service Area All Hidden</div>
+      <div class="issue-body">
+        Google builds trust in a local business by seeing its name, phone number, and
+        service area consistently across the web — GBP, website, directories like Yelp,
+        HomeStars, and BBB. Right now, none of that exists for CJ's Carpet Cleaning.
+        The phone number (587-434-0814) appears nowhere Google can index.
+        There is no record that this business serves Calgary, let alone specific areas
+        like the NE, NW, or SW quadrants where residential calls come from.
+        Until these signals exist, Google has no reason to show CJ's to anyone.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cta-section">
+  <div class="container">
+    <h2 class="cta-h">The Before/Afters Are There.<br>Calgary Just Can't Find Them Yet.</h2>
+    <p class="cta-body">
+      In the first 14 days I'll personally build and verify the Google Business Profile,
+      get the pet stain and residential categories dialed in, upload the before/after photos,
+      and set up a review request sequence for every job — at no cost.
+      You'll see the profile live and ranking before you decide whether to continue.
+    </p>
+    <a href="https://link.localbizboost.com/widget/booking/lobOMW2RpbL2Vu9SblWG" class="cta-btn">Book a Free 15-Minute Call</a>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <span>Prepared by <a href="https://localbizboost.com">Milos Perdic · LocalBizBoost.com</a></span>
+      <span>Data sourced from Google Business Profile &amp; Google Search — June 13, 2026</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
